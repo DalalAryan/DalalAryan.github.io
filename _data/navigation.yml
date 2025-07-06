@@ -24,13 +24,13 @@ main:
     url: /cv/
 
   - title: "Projects"
-    url: /teaching/
+    url: /projects/
 
   - title: "Lecture Notes"
-    url: /portfolio/
+    url: /lecturenotes/
 
   - title: "Miscellaneous"
-    url: /talks/
+    url: /miscellaneous/
     
   # - title: "CV"
   #   url: /cv-json/
