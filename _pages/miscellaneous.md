@@ -13,7 +13,7 @@ Hi! My name is Aryan but I like to go by Aru. I'm an applied mathematics/cse und
 
 Recently, I have been learning *Feather: Draw in 3D*. I saw a YouTube video on it and found it quite interesting that I can bring my boring 2D sketches of Formula 1 cars to life. Turns out, drawing in 3D is as hard as it sounds :/
 
-I am an avid enjoyer of [www.sudoku.com](www.sudoku.com). I unlocked the *Extreme* level on the Sudoku app on 06/05/2025 (that's July, 05; yes, I have to conform to the American date system).
+I am an avid enjoyer of [www.sudoku.com](www.sudoku.com). I unlocked the *Extreme* level on the Sudoku app on 07/05/2025 (that's July 05; yes, I have to conform to the American date system).
 
 Friends
 ------
