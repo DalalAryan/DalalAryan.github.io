@@ -29,6 +29,9 @@ main:
   - title: "Lecture Notes"
     url: /lecturenotes/
 
+  - title: "Math Stuff"
+    url: /mathstuff/
+
   - title: "Miscellaneous"
     url: /miscellaneous/
     
