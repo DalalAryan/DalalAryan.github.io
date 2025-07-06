@@ -15,6 +15,20 @@ Recently, I have been learning *Feather: Draw in 3D*. I saw a YouTube video on i
 
 I am an avid enjoyer of <www.sudoku.com>. I unlocked the *Extreme* level on the Sudoku app. 
 
+Friends
+------
+**Brandon** - my good friend. I call him Brandy because it sounds cool. he carries his camera everywhere and loves everything movies. he and I share some similar music tastes in clairo, wallows and matt maltese.
+
+**Rithwik** - to be added
+
+**Shashwat** - to be added
+
+**Ashley** - to be added
+
+**Ashlynn** - to be added
+
+**Mohavi** - to be added
+
 Backpacking
 ------
 I joined The UCLA Backpacking Club (TUBC) my freshman year and we backpacked *Joshua Tree National Park, CA*, *Anza Borego Desert State Park, CA* and *Big Sur, CA*. I have met some really cool people on these trips (who are not just math majors!) and taken some breathtaking photographs. Here are a few from my camera roll!
