@@ -19,11 +19,12 @@ Friends
 ------
 * **Brandon** - my good friend. I call him Brandy because it sounds cool. he carries his camera everywhere and loves everything movies. he and I share some similar music tastes in clairo, wallows and matt maltese.
 * **[Rithwik](https://www.rithwiksharma.com/home)** - mr. always late. he takes pride in arriving in fashion, albeit 2 hours past the posted time. he's doing some really cool things at Georgia Tech as a computer engineer. we both enjoy Dream On by Aerosmith, the ultimate hype song. 
-* **Shashwat** - to be added
+* **Shashwat** - my short 5 foot 4 inch friend (he says he's 5'6"). he's studying physics at UIUC and is doing interesting research in nuclear. him and I shared the podium for Salutatorian and Valedictorian respectively at our high school graduation. Rithwik, Shashwat and I often call ourselves the three musketeers, we come as a package, you know. he loves to overpay for boba and often falls for scams. 
 * **Ashley** - to be added
 * **Ashlynn** - to be added
 * **Mohavi** - to be added
-
+* **Pavit** - the independent financially stable entrepreneur. can always count on him if I forget my wallet and he loves pizza (he hasn't even been to Italy). Currently a Robolox Game Developer and for some reason, is doing Business in addition to Computer Science at Trinity? 
+  
 Backpacking
 ------
 I joined The UCLA Backpacking Club (TUBC) my freshman year and we backpacked *Joshua Tree National Park, CA*, *Anza Borego Desert State Park, CA* and *Big Sur, CA*. I have met some really cool people on these trips (who are not just math majors!) and taken some breathtaking photographs. Here are a few from my camera roll!
