@@ -23,6 +23,9 @@ main:
   - title: "CV"
     url: /cv/
 
+  - title: "Projects"
+    url: /teaching/
+
   - title: "Lecture Notes"
     url: /portfolio/
 
