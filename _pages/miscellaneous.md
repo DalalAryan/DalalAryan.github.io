@@ -13,21 +13,21 @@ Hi! My name is Aryan but I like to go by Aru. I'm an applied mathematics/cse und
 
 Recently, I have been learning *Feather: Draw in 3D*. I saw a YouTube video on it and found it quite interesting that I can bring my boring 2D sketches of Formula 1 cars to life. Turns out, drawing in 3D is as hard as it sounds :/
 
-I am an avid enjoyer of <www.sudoku.com>. I unlocked the *Extreme* level on the Sudoku app. 
+I am an avid enjoyer of [www.sudoku.com](www.sudoku.com). I unlocked the *Extreme* level on the Sudoku app. 
 
 Friends
 ------
-**Brandon** - my good friend. I call him Brandy because it sounds cool. he carries his camera everywhere and loves everything movies. he and I share some similar music tastes in clairo, wallows and matt maltese.
+* **Brandon** - my good friend. I call him Brandy because it sounds cool. he carries his camera everywhere and loves everything movies. he and I share some similar music tastes in clairo, wallows and matt maltese.
 
-**Rithwik** - to be added
+* **Rithwik** - to be added
 
-**Shashwat** - to be added
+* **Shashwat** - to be added
 
-**Ashley** - to be added
+* **Ashley** - to be added
 
-**Ashlynn** - to be added
+* **Ashlynn** - to be added
 
-**Mohavi** - to be added
+* **Mohavi** - to be added
 
 Backpacking
 ------
