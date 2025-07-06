@@ -7,32 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-#1
+Hi! I am a second year Applied Math/Computer Science Engineering undergrad at UCLA. I am interested in Optimal Transport/Control Theory, Mathematical Machine Learning, Optimization and Computer Vision. 
 
-A data-driven personal website
+Currently
 ======
-#2
+Working on Skin Cancer Detection with 3D TBP (Total Body Photographs). We're implementing techniques of Computer Vision from Image Processing to build an accurate Machine Learning Model for Skin Cancer Detection. 
 
-Getting started
-======
-#3
+Reading *Principles of Mathematical Analysis, W.A. Rudin*. 
 
-Site-wide configuration
-------
-#4
+Reading *Probability and Measure, P. Billingsley*. 
 
-Create content & metadata
-------
-#5
-
-**Markdown generator**
-
-#6
-
-How to edit your site's GitHub repository
-------
-#7
-
-For more info
-------
-#8
+Learning **MATH 156: Machine Learning** and **MATH 170E: Probability**.  
