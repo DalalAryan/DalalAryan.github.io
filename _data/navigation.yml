@@ -24,7 +24,7 @@ main:
     url: /cv/
 
   - title: "Programming"
-    url: /projects/
+    url: /programming/
 
   - title: "Lecture Notes"
     url: /lecturenotes/
