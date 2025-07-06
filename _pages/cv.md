@@ -13,6 +13,10 @@ Education
 ======
 * B.S. Applied Mathematics/Computer Science Engineering, UCLA, 2028
 
+Papers
+======
+* "Models for Olympic Medal Tables, 2025 MCM Problem C", *Bonyadi, S., Dalal, A., Guo, J., Quan, J., Shaham, S.*, Math 142 Capstone S25 (Spring 2025)
+
 Teaching
 ======
 * Spring 2025: Undergraduate Teaching Assistant
@@ -50,27 +54,7 @@ Classes
   * Math 31B (Infinite Series)
   * Comptng 10A (Introduction to Programming)
 
-Papers
+Work
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Computer Science Assistant, UCLA Henry Samueli School of Engineering & Applied Science
+  * Assistant to Undergraduate/Graduate Student Affairs, Graduate Student Office at Department of Computer Science, UCLA
