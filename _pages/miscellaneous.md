@@ -18,7 +18,7 @@ I am an avid enjoyer of [www.sudoku.com](www.sudoku.com). I unlocked the *Extrem
 Friends
 ------
 * **Brandon** - my good friend. I call him Brandy because it sounds cool. he carries his camera everywhere and loves everything movies. he and I share some similar music tastes in clairo, wallows and matt maltese.
-* **Rithwik** - to be added
+* **[Rithwik](https://www.rithwiksharma.com/home)** - mr. always late. he takes pride in arriving in fashion, albeit 2 hours past the posted time. he's doing some really cool things at Georgia Tech as a computer engineer. we both enjoy Dream On by Aerosmith, the ultimate hype song. 
 * **Shashwat** - to be added
 * **Ashley** - to be added
 * **Ashlynn** - to be added
