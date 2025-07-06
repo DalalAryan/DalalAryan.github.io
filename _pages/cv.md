@@ -11,37 +11,46 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.S. Applied Mathematics/Computer Science Engineering, UCLA, 2028
 
-Work experience
+Teaching
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Spring 2025: Undergraduate Teaching Assistant
+  * MATH 115AH: Honors Linear Algebra, UCLA
+  * *William Conley*, Professor of Teaching
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Winter 2025: Undergraduate Teaching Assistant
+  * MATH 31B: Integration & Infinite Series, UCLA
+  * *David Beers*, Postdoctoral Scholar
+ 
+Classes
+======
+* Fall 2025
+  * Math 245A (Graduate Real Analysis Part I)
+  * Math 266A (Graduate Applied Ordinary Differential Equations Part I)
+  * Math 269A (Graduate Numerical Analysis Part I)
+  * Physics 115A (Quantum Mechanics Part I)
+  * CS 33 (Computer Organization)
   
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Spring 2025
+  * Math 136 (Partial Differential Equations Theory)
+  * Math 135 (Ordinary Differential Equations Theory)
+  * Math 164 (Optimization)
+  * Math 142 (Mathematical Modeling)
+  * CS 32 (Data Structures & Algorithms)
 
-Publications
+* Winter 2025
+  * Math 115AH (Honors Linear Algebra Part I)
+  * Math 134 (Dynamical Systems)
+  * Math 32BH (Honors Multivariate Analysis Part II)
+  * CS 31 (Introduction to Computer Science I)
+  
+* Fall 2024
+  * Math 32AH (Honors Multivariate Analysis Part I)
+  * Math 31B (Infinite Series)
+  * Comptng 10A (Introduction to Programming)
+
+Papers
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
@@ -52,12 +61,15 @@ Talks
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
-  
-Teaching
+
+Skills
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* Skill 1
+* Skill 2
+  * Sub-skill 2.1
+  * Sub-skill 2.2
+  * Sub-skill 2.3
+* Skill 3
   
 Service and leadership
 ======
