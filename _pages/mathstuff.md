@@ -9,3 +9,4 @@ redirect_from:
 
 Some Interesting Math I Have Come Across (Excerpts from Lectures and Otherwise)
 -------
+Yet to add some * stuff * here. 
