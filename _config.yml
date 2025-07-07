@@ -22,7 +22,7 @@ repository               : "calcpika/calcpika.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : ""
+  avatar           : "profile.png"
   name             : "Aryan Dalal"
   pronouns         : "He/Him" 
   bio              : "Applied Math & CSE Undergrad"
