@@ -32,6 +32,9 @@ main:
   - title: "Math Stuff"
     url: /mathstuff/
 
+  - title: "Axioms"
+    url: /axioms/
+
   - title: "Miscellaneous"
     url: /miscellaneous/
     
