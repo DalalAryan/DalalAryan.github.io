@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Axioms of Life"
-permalink: /lecturenotes/
+permalink: /axioms/
 author_profile: true
 redirect_from:
   - /resume
