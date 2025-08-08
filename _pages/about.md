@@ -13,8 +13,6 @@ Currently
 ======
 Working on Skin Cancer Detection with 3D TBP (Total Body Photographs). We're implementing techniques of Computer Vision from Image Processing to build an accurate Machine Learning Model for Skin Cancer Detection. 
 
-Reading *Principles of Mathematical Analysis, W.A. Rudin*. 
+Teaching myself Data Structures & Algorithms in Python. 
 
-Reading *Probability and Measure, P. Billingsley*. 
 
-Learning **MATH 156: Machine Learning** and **MATH 170E: Probability**.  
