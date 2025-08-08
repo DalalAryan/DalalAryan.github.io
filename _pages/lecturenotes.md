@@ -11,7 +11,7 @@ Summer Sessions 2025
 -------
 
 MATH 170E: Introduction to Probability For Scientists & Engineers\
-Lectures by *Giulio Farolfi*\
+Lectures by *Giulio Farolfi*, Hedrick Assistant Adjunct Professor, UCLA\
 [MATH 170E: Introduction to Probability (For Scientists & Engineers) Lecture Notes](https://github.com/DalalAryan/uclamathlecturenotes/blob/ef45fdda36b8520dac94922f92ef7522e6280019/MATH%20170E%20Probability%20for%20Scientists%20and%20Engineers.pdf)
 
 Spring Quarter 2025
