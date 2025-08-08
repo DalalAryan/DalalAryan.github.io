@@ -10,4 +10,4 @@ redirect_from:
 Lecture Notes
 -------
 
-[MATH 170E: Introduction to Probability (For Scientists & Engineers)](files/MATH 170E Probability for Scientists and Engineers.pdf)
+[MATH 170E: Introduction to Probability (For Scientists & Engineers)](https://github.com/DalalAryan/uclamathlecturenotes/blob/ef45fdda36b8520dac94922f92ef7522e6280019/MATH%20170E%20Probability%20for%20Scientists%20and%20Engineers.pdf)
