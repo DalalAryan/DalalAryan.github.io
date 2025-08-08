@@ -21,7 +21,7 @@ Spring Quarter 2025
 
 MATH 136: Partial Differential Equations\
 Lectures by *Patrick Flynn*, Hedrick Assistant Adjunct Professor, UCLA\
-[MATH 136: Partial Differential Equations Lecture Notes](https://github.com/DalalAryan/uclamathlecturenotes/blob/b76d239496e2fc75c66a588cfdab58d7fd0552f3/MATH%20136%20Partial%20Differential%20Equations%20by%20Zihao%20Sun.pdf)
+[MATH 136: Partial Differential Equations Lecture Notes](https://github.com/DalalAryan/uclamathlecturenotes/blob/b76d239496e2fc75c66a588cfdab58d7fd0552f3/MATH%20136%20Partial%20Differential%20Equations%20by%20Zihao%20Sun.pdf)\
 *Note: These notes are from my good friend, Zihao Sun--a sophomore math major at UCLA; these notes were not written by me, although I did contribute to providing lecture material to Zihao.
 
 MATH 142: Mathematical Modeling\
