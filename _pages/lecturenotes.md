@@ -7,6 +7,8 @@ redirect_from:
   - /resume
 ---
 
+**Important Note**: I am still working on updating lecture notes for several courses. So far, Math 170E, Math 32AH and Math 31B are ready to access. Further, I will soon update this page with course notes for Fall 2025: Real Analysis, Numerical Analysis, Applied Differential Equations and Quantum Mechanics. 
+
 Summer Sessions 2025
 -------
 
@@ -31,7 +33,7 @@ Lectures by *Mo Zhou*, Assistant Adjunct Professor, UCLA\
 
 
 MATH 164: Optimization\
-Lectures by *Willem Diepeeven*, Hedrick Assistant Adjunct professor, UCLA\
+Lectures by *Willem Diepeeven*, Hedrick Assistant Adjunct Professor, UCLA\
 [MATH 164: Convex & Non-Convex Optimization Lecture Notes]()
 
 Winter Quarter 2025
