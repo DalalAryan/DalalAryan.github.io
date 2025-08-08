@@ -9,4 +9,5 @@ redirect_from:
 
 Lecture Notes
 -------
-have to add the links here, there will be some errors (let me know if you come across typos/errors)
+
+[MATH 170E: Introduction to Probability (For Scientists & Engineers)](files/MATH 170E Probability for Scientists and Engineers.pdf)
