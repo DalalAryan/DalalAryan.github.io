@@ -7,7 +7,8 @@ redirect_from:
   - /resume
 ---
 
-Programming Projects
+Skin Cancer Detection with 3D: Total Body Photographs (HAM-10000 Dataset)
 -------
 
-stuff to be added
+Keywords: Boosting, Stacking, Ensemble Methods, LightGBM, SVM, XGBoost, Feature Extraction\
+details to come
