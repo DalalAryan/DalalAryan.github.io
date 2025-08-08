@@ -12,3 +12,5 @@ Skin Cancer Detection with 3D: Total Body Photographs (HAM-10000 Dataset)
 
 Keywords: Boosting, Stacking, Ensemble Methods, LightGBM, SVM, XGBoost, Feature Extraction\
 details to come
+
+Last Updated: August 08, 2025
