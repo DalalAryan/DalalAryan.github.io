@@ -31,4 +31,4 @@ Backpacking
 ------
 I joined The UCLA Backpacking Club (TUBC) my freshman year and we backpacked *Joshua Tree National Park, CA*, *Anza Borego Desert State Park, CA* and *Big Sur, CA*. I have met some really cool people on these trips (who are not just math majors!) and taken some breathtaking photographs. Here are a few from my camera roll!
 
-![Big Sur](images/IMG_5774.jpeg)
+<img src = "IMG_5774.jpef">
