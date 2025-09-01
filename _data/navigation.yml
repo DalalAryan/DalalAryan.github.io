@@ -23,14 +23,14 @@ main:
   - title: "CV"
     url: /cv/
 
+  - title: "Lecture Notes"
+    url: /lecturenotes/
+
   - title: "Programming"
     url: /programming/
 
   - title: "Computer Science"
     url: /compsci/
-
-  - title: "Lecture Notes"
-    url: /lecturenotes/
 
   - title: "Math Stuff"
     url: /mathstuff/
