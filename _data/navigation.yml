@@ -26,14 +26,17 @@ main:
   - title: "Programming"
     url: /programming/
 
+  - title: "Computer Science"
+    url: /compsci/
+
   - title: "Lecture Notes"
     url: /lecturenotes/
 
   - title: "Math Stuff"
     url: /mathstuff/
 
-  - title: "Axioms"
-    url: /axioms/
+  # - title: "Axioms"
+  #  url: /axioms/
 
   - title: "Miscellaneous"
     url: /miscellaneous/
