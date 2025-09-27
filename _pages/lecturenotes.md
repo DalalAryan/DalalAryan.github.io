@@ -15,7 +15,7 @@ Fall 2025
 -------
 
 MATH 131AH: Honors Real Analaysis I\
-Lectures by *Monica Visan*, Professor, UCLA\
+Lectures by *Monica Visan*, Professor, UCLA Math\
 [to be added]
 
 MATH 156: Machine Learning\
