@@ -30,10 +30,10 @@ Teaching
 Classes
 ======
 * Fall 2025
-  * Math 245A (Graduate Real Analysis Part I)
-  * Math 266A (Graduate Applied Ordinary Differential Equations Part I)
-  * Math 269A (Graduate Numerical Analysis Part I)
-  * Physics 115A (Quantum Mechanics Part I)
+  * Math 131AH (Honors Real Analysis Part I)
+  * Math 156 (Machine Learning Theory)
+  * Math 182 (Algorithms)
+  * EC ENGR C143A (Neural Signal Processing)
   * CS 33 (Computer Organization)
   
 * Spring 2025
