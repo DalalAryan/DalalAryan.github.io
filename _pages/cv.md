@@ -34,7 +34,7 @@ Classes
   * Math 156 (Machine Learning Theory)
   * Math 182 (Algorithms)
   * EC ENGR C143A (Neural Signal Processing)
-  * CS 33 (Computer Organization)
+  * CS 33 (Computer Organization & Architecture)
   
 * Spring 2025
   * Math 136 (Partial Differential Equations Theory)
