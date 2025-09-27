@@ -1,7 +1,7 @@
 ---
 title: 'Neural Signal Processing'
 date: 2025-09-29
-permalink: /posts/2025/09/neural-signal-processing/
+permalink: /posts/2025/09/blog-post-1/
 tags:
   - math
   - computer science
