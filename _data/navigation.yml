@@ -26,10 +26,10 @@ main:
   - title: "Lecture Notes"
     url: /lecturenotes/
 
-  - title: "Programming"
+  - title: "Programming/CS"
     url: /programming/
 
-  - title: "Computer Science"
+  - title: "Blog"
     url: /compsci/
 
   - title: "Math Stuff"
