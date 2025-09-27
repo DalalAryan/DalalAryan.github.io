@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Computer Science"
+title: "The Rabbit Hole"
 permalink: /posts/
 author_profile: true
 redirect_from:
