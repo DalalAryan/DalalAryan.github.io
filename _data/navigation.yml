@@ -30,7 +30,7 @@ main:
     url: /programming/
 
   - title: "Blog"
-    url: /compsci/
+    url: /posts/
 
   - title: "Math Stuff"
     url: /mathstuff/
