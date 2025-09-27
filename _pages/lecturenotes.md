@@ -9,7 +9,7 @@ redirect_from:
 
 **Important Note**: I am still working on updating lecture notes for several courses. So far, Math 170E, Math 136, Math 32AH and Math 31B are ready to access. Further, I will soon update this page with course notes for Fall 2025: Real Analysis, Numerical Analysis, Applied Differential Equations and Quantum Mechanics. 
 
-Last Updated: August 08, 2025
+Last Updated: September 27, 2025
 
 Fall 2025
 -------
@@ -81,5 +81,5 @@ Lectures by *Tyler Arant*, Assistant Adjunct Professor, UCLA Math\
 [MATH 32AH: Multivariate Differential Calculus Honors Lecture Notes](https://github.com/DalalAryan/uclamathlecturenotes/blob/ef45fdda36b8520dac94922f92ef7522e6280019/MATH%2032AH%20Lecture%20Notes.pdf)
 
 MATH 31B: Integration & Infinite Series\
-Lectures by *David Beers*, Postdoctoral Scholar, UCLA\
+Lectures by *David Beers*, Postdoctoral Scholar, UCLA Math\
 [MATH 31B: Infinite Series](https://github.com/DalalAryan/uclamathlecturenotes/blob/ef45fdda36b8520dac94922f92ef7522e6280019/MATH%2031B%20Lecture%20Notes.pdf)
