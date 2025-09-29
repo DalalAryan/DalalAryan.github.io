@@ -31,9 +31,9 @@ Classes
 ======
 * Fall 2025
   * Math 131AH (Honors Real Analysis Part I)
-  * Math 156 (Machine Learning Theory)
-  * Math 182 (Algorithms)
-  * EC ENGR C143A (Neural Signal Processing)
+  * Math 156 (Machine Learning)
+  * Math 269A (Graduate Numerical Analysis)
+  * EC ENGR C243A (Graduate Neural Signal Processing & Brain-Computer Interface)
   * CS 33 (Computer Organization & Architecture)
   
 * Spring 2025
