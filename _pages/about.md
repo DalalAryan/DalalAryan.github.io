@@ -9,11 +9,11 @@ redirect_from:
 
 Hi! I am a second year Applied Math/Computer Science Engineering undergrad at UCLA. I am interested in Optimal Transport/Control Theory, Mathematical Machine Learning, Optimization and Computer Vision. 
 
+I am workings towards adding a Neuroscience minor to my degree plan!
+
 Currently
 ======
-Working on Skin Cancer Detection with 3D TBP (Total Body Photographs). We're implementing techniques of Computer Vision from Image Processing to build an accurate Machine Learning Model for Skin Cancer Detection. 
+Working with Brain-Computer Interfaces and learning Speech Decoding/Encoding through Non-invasive (and Invasive) neural recording technologies (through ECE C143A/C243A)
 
-Teaching myself Data Structures & Algorithms in Python. 
-
-Last Updated: August 08, 2025
+Last Updated: September 29, 2025
 
