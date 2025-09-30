@@ -9,7 +9,7 @@ redirect_from:
 
 **Important Note**: I am still working on updating lecture notes for several courses. So far, Math 170E, Math 136, Math 32AH and Math 31B are ready to access. Further, I will soon update this page with course notes for Fall 2025: Real Analysis, Numerical Analysis, Applied Differential Equations and Quantum Mechanics. 
 
-Last Updated: September 27, 2025
+Last Updated: September 30, 2025
 
 Fall 2025
 -------
@@ -19,14 +19,14 @@ Lectures by *Monica Visan*, Professor, UCLA Math\
 [to be added]
 
 MATH 156: Machine Learning\
-Lectures by *Willem Diepeeven*, Hedrick Assistant Adjunct Professor, UCLA Math\
+Lectures by *Giulio Farolfi*, Hedrick Assistant Adjunct Professor, UCLA Math\
 [to be added]
 
-MATH 182: Algorithms\
-Lectures by *Daniel Soskin*, Hedrick Assistant Adjunct Professor, UCLA Math\
+MATH 269A: Graduate Numerical Analysis I\
+Lectures by *Chenfanfu Jiang*, Professor, UCLA Math\
 [to be added]
 
-EC ENGR C143A: Neural Signal Processing\
+EC ENGR C243A: Neural Signal Processing & Brain-Computer Interface\
 Lectures by *Jonathan Kao*, Associate Professor, UCLA SEAS\
 [to be added]
 
