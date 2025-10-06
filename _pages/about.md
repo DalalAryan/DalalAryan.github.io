@@ -11,9 +11,11 @@ Hi! I am a second year Applied Math/Computer Science Engineering undergrad at UC
 
 I am workings towards adding a Neuroscience minor to my degree plan!
 
-Currently
+News
 ======
-Working with Brain-Computer Interfaces and learning Speech Decoding/Encoding through Non-invasive (and Invasive) neural recording technologies (through ECE C143A/C243A)
+I will be participating in a Directed Reading Program (DRP) project with [William Chang](https://williamc.me/) in Machine Learning. 
 
-Last Updated: September 29, 2025
+Working with Brain-Computer Interfaces and Speech Decoding/Encoding through Non-invasive (and Invasive) neural recording technologies (through EC ENGR C143A/C243A)
+
+Last Updated: October 06, 2025
 
