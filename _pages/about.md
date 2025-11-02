@@ -7,15 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a second year Applied Math/Computer Science Engineering undergrad at UCLA. I am interested in Optimal Transport/Control Theory, Mathematical Machine Learning, Optimization and Computer Vision. 
+Hi! I am a 2nd year Applied Mathematics & Computer Science Engineering undergraduate at UCLA. I am working with [Guido Montúfar](https://www.math.ucla.edu/~montufar/) at the [Mathematical Machine Learing Group](https://www.math.ucla.edu/~montufar/#People). In Summer 2025, I worked on a Skin-Cander Prediction Model with 3-D Total Body Photographs. My research interests are in optimization, signal processing, computer vision, and mathematical machine learning. 
 
-I am workings towards adding a Neuroscience minor to my degree plan!
+I am participating in a Directed Reading program (DRP) project with [William Chang](https://williamc.me/) in Tokenization & Reinforcement Learning. I am also committed to a year-long development of a LiDAR based autonomous vehicle as part of an IEEE @ UCLA project. 
 
-News
-======
-I will be participating in a Directed Reading Program (DRP) project with [William Chang](https://williamc.me/) in Machine Learning. 
+My `Fall 2025` coursework is: `Real Analysis`, `Machine Learning`, `Neural Signal Processing & Brain-Computer Interface`, `Numerical Analysis` and `R Programming`. 
 
-Working with Brain-Computer Interfaces and Speech Decoding/Encoding through Non-invasive (and Invasive) neural recording technologies (through EC ENGR C143A/C243A)
+You can reach me by email at [aryandalal@ucla.edu](aryandalal@ucla.edu). 
 
-Last Updated: October 06, 2025
+Last Updated: November 02, 2025
 
