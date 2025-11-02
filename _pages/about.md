@@ -11,7 +11,7 @@ Hi! I am a 2nd year Applied Mathematics & Computer Science Engineering undergrad
 
 I am participating in a Directed Reading program (DRP) project with [William Chang](https://williamc.me/) in Tokenization & Reinforcement Learning. I am also committed to a year-long development of a LiDAR based autonomous vehicle as part of an IEEE @ UCLA project. 
 
-My `Fall 2025` coursework is: `Real Analysis`, `Machine Learning`, `Neural Signal Processing & Brain-Computer Interface`, `Numerical Analysis` and `R Programming`. 
+My `Fall 2025` coursework is: Real Analysis, Machine Learning, Neural Signal Processing & Brain-Computer Interface, Numerical Analysis and R Programming. 
 
 You can reach me by email at [aryandalal@ucla.edu](aryandalal@ucla.edu). 
 
