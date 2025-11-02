@@ -29,10 +29,17 @@ Teaching
  
 Classes
 ======
+* Winter 2026
+  * Math 131BH (Honors Real Analysis II)
+  * Math 269B (Graduate Numerical Analysis II)
+  * Math 270B (Graduate Computational Linear Algebra I)
+  * EC ENGR 236B (Graduate Convex Optimization)
+  * EC ENGR C247A (Graduate Neural Networks & Deep Learning I)
+
 * Fall 2025
-  * Math 131AH (Honors Real Analysis Part I)
+  * Math 131AH (Honors Real Analysis I)
   * Math 156 (Machine Learning)
-  * Math 269A (Graduate Numerical Analysis)
+  * Math 269A (Graduate Numerical Analysis I)
   * EC ENGR C243A (Graduate Neural Signal Processing & Brain-Computer Interface)
   * CS 33 (Computer Organization & Architecture)
   
