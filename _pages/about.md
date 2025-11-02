@@ -13,6 +13,8 @@ I am participating in a Directed Reading program (DRP) project with [William Cha
 
 My `Fall 2025` coursework is: Real Analysis, Machine Learning, Neural Signal Processing & Brain-Computer Interface, Numerical Analysis and R Programming. 
 
+Outside of mathematics and computer science, I like to play sudoku, chess, pickleball, soccer, and backpack to new national forests. I speak English, Hindi and Spanish (in limited capacity). I like coffee and taking photos of random things.
+
 You can reach me by email at [aryandalal@ucla.edu](aryandalal@ucla.edu). 
 
 Last Updated: November 02, 2025
