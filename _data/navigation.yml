@@ -23,17 +23,20 @@ main:
   - title: "CV"
     url: /cv/
 
-  - title: "Lecture Notes"
-    url: /lecturenotes/
+  - title: "Research"
+    url: /research/
 
-  - title: "Programming/CS"
+  - title: "CS Projects"
     url: /programming/
 
-  - title: "Blog"
-    url: /year-archive/
+  # - title: "Blog"
+  # url: /year-archive/
 
   - title: "Math Stuff"
     url: /mathstuff/
+
+  - title: "UCLA Lecture Notes"
+    url: /lecturenotes/
 
   # - title: "Axioms"
   #  url: /axioms/
