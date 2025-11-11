@@ -39,7 +39,7 @@ Turing was concerned that we may be programming functions that perform mathemati
 
 **Functional correctness** is a notion of program correctness in the sense that the program is a faithful implementation of some well-defined mathematical function. Functional correctness is important because it tells us that our program behaves exactly as how we expect it to, following from its equivalent mathematical definition. 
 
-But what about deep learning? Is functional correctness relevant here? Well, since deep learning technologies work to perform tasks that are often not captured mathematicaly, it's safe to say functional correctness is somewhat useless here because we cannot mathematically define tasks that are performed by deep learning.
+But what about deep learning? Is functional correctness relevant here? Well, since deep learning tends to perform tasks that are often not captured mathematically, it's safe to say functional correctness is moot because we cannot properly define a mathematical function to verify our program against. 
 
 However, we can still use the verification framework to characterize some of its desirable and undesirable properties.
 
