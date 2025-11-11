@@ -17,7 +17,7 @@ These notes are rough and in fact may contain errors (grammatical, conceptual or
 
 ### 1.1: Alan Turing and the Factorial Program
 
-How do we show that programs in fact do what we intend them to do? In Alan Turing's paper titled ``Checking a Large Routine'', he explores the probability of programs and provides a proof of correctness of a program implementing the factorial function. 
+How do we show that programs in fact do what we intend them to do? In Alan Turing's paper titled "Checking a Large Routine", he explores the probability of programs and provides a proof of correctness of a program implementing the factorial function. 
 
 Turing proved that his factorial program always terminates and alwasy produces a factorial of its input, no matter the input. In general, what Turing showed was that his program works exactly as the mathematical definition of a factorial. 
 
@@ -33,9 +33,9 @@ Deep Learning is often applied in Computer Vision and Natural Language Processin
 
 ### 1.3: What do We Expect of Neural Networks in Terms of Verification?
 
-Turing was concerned that we may programming functions that perform mathematicals that don't match their mathematical definitions. His proof showed that his implementation of the factorial was indeed equivalent to the mathematical definition by stiching lemmas. 
+Turing was concerned that we may be programming functions that perform mathematical operations that don't match their mathematical definitions. His proof showed that his implementation of the factorial was indeed equivalent to the mathematical definition by stiching lemmas. 
 
-**Functional correctness* is a notion of program correctness in the sense that the program is a faithful implementation of some well-defined mathematical function. Functional correctness is important because it tells us that our program behaves exactly as how we expect it to, following from its equivalent mathematical definition. 
+**Functional correctness** is a notion of program correctness in the sense that the program is a faithful implementation of some well-defined mathematical function. Functional correctness is important because it tells us that our program behaves exactly as how we expect it to, following from its equivalent mathematical definition. 
 
 But what about deep learning? Is functional correctness relevant here? Well, since deep learning technologies work to perform tasks that are often not captured mathematicaly, it's safe to say functional correctness is somewhat useless here because we cannot mathematically define tasks that are performed by deep learning.
 
