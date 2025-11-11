@@ -1,5 +1,5 @@
 ---
-title: 'Neural Network Verification - UCLA MathML Group'
+title: 'Neural Network & Correctness - UCLA MathML Group'
 date: 2025-11-10
 permalink: /posts/2025/11/neural-network-verification/
 tags:
@@ -12,6 +12,8 @@ tags:
 Below are a couple of notes I have made while reading `Introduction to Neural Network Verification' by Aws Albarghouthi, University of Wisconsin-Madison. This is a text on correctness and verification in deep learning (in essence, AI safety). I was assigned this reading by my advisor, Guido Montúfar as part of our project in 'Quantification & Verification of AI Systems' in the MathML Group. 
 
 These notes are rough and in fact may contain errors (grammatical, conceptual or otherwise). These errors should not be associated with the author of the text, rather, they should be associated with me. With that, I will continue to update these notes as I read through the text. 
+
+This note corresponds to Part I - Neural Networks & Correctness. Part II and Part III will be worked on separately.
 
 ## Chapter 1: A New Beginning
 
