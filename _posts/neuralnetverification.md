@@ -1,7 +1,7 @@
 ---
 title: 'Neural Network Verification | UCLA MathML Group'
 date: 2025-11-10
-permalink: /posts/neural-network-verification/
+permalink: /posts/2025/11/neural-network-verification/
 tags:
   - math
   - computer science
