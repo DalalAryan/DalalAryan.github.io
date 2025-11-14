@@ -51,6 +51,47 @@ Next Steps: Build a language for formally specifying correctness properties of n
 
 ## Chapter 2: Neural Networks as Graphs
 
-I will update this soon once I have finished the chapter!
+A key routine in mathematics is to define an object an study its properties. It is therefore surprising that there doesn't exist yet a rigorous definition of what deep learning is and what it is not. The author chooses to define neural networks generically as *graphs* of operations over the reals.
+
+The *shapes* of said graphs (called the *architecture*) are not arbitrary and in fact, are chosen depending on the task. As such. neural networks for image recognition look quite different than networks designed for natural language processing tasks. 
+
+### 2.1: The Neural Building Blocks
+
+**Definition.** (Neural Network).\
+A *Neural Network* is a graph where each node performs an operation.
+
+Overall, the graph represents a function $f:\mathbb{R}^n \longrightarrow \mathbb{R}^n$. A simple neural network contains an *input node* that passes an input $x \in \mathbb{R}$ to a *node* $v$ that performs some operation on $x$ and spits out a value that goes to the *output node*. 
+
+Suppose the node $v$ is defined to perform the operation $f_v\left(x\right) = 5x + 3$ where $x$ comes from the input node. Then, output node performs the operation $\max \left(0, x\right)$. Combining, our graph encodes the function $f:\mathbb{R} \longrightarrow \mathbb{R}$ defined as follows,
+$$f\left(x\right) = \left(f_y \circ f_v\right)\left(x\right) = \max\left(0, 5x + 3\right)$$
+
+We have a name for $f_y$: it's called an *activation* function. The name speaks for itself: it turns on or off depending on what is fed to it. The function $\max\left(0, x\right) is an activation function called the *rectified linear unit* (ReLU). Suppose $x = -5$, then $\max\left(0, -5\right) = 0$. However, if $x = 7$, then $\max\left(0, 7\right) = 7$. 
+
+- Activations functions are used to add non-linearity into a neural network.
+
+But what makes activation functions so special? Empirically, activation functions such as the ReLU seem to work quite well in the context of neural networks. 
+
+- One can construct a neural network comprised of ReLUs or sigmoid activation functions and affine functions to approximate any continuous function. This is known as the *universal approximation theorem*.
+- Interestingly, polynomial activation functions are not very desirable for deep learning.
+
+### 2.2: Layers and Layers and Layers
+
+Neural networks are usually *layered*. A multilayer perceptron denotes a function $f:\mathbb{R}^3 \longrightarrow \mathbb{R}^3$. It has 3 input nodes, 3 hidden nodes (in 1 hidden layer) and 3 output nodes. 
+
+A multilayer perceptron with two hidden layers preserves 3 input and 3 output nodes but instead has 6 hidden nodes (3 per hidden leayer). 
+
+Layers in a multilayer perceptron are called *fully connected* layers because each node receives all outpits from the preceding layer. 
+
+Neural Networks are typically used as *classifiers*. What does this imply? When we perform classification related tasks, the output layer of the multilayer perception represents the probability associated to each class. We can ensure that the probabilities at the output layers are normalized by using the *softmax* function.
+
+### 2.3: Convolutional Layers
+### 2.4: Where are the Loops?
+### 2.5: Structure and Semantics of Neural Networks
+
+## Chapter 3: Correctness Properties
+
+I will update this chapter once I have finished reading it!
+
+Last Updated: November 13, 2025
 
 
