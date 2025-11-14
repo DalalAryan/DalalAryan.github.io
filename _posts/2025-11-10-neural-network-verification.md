@@ -87,8 +87,37 @@ Layers in a multilayer perceptron are called *fully connected* layers because ea
 Neural Networks are typically used as *classifiers*. What does this imply? When we perform classification related tasks, the output layer of the multilayer perception represents the probability associated to each class. We can ensure that the probabilities at the output layers are normalized by using the *softmax* function.
 
 ### 2.3: Convolutional Layers
+
+A hallmark of computer vision is the convolutional neural network. The rough intuition is that if you are looking at an image, you want to scan it looking for patterns. It defines an operation, one might caller it either a *filter* or a *kernel*, which is applied to every region of pixels in an image or every sequence of words in a sentence. 
+
+Typically, a convolutional neural network will apply a bunch of filters to an input and aggregate the informaton from each filter (this is called pooling). There are two widely used notions of pooling: the max-pool and the avg-pool. One can easily understand what each pool does; the max-pool takes the most dominant element from a patch after a filter is applied while the avg-pool takes the average of the entire patch. 
+
 ### 2.4: Where are the Loops?
+
+The neural networks thus far explore are simply a composition of multiple mathematical functions. However, we can also create loops within networks. 
+
+In practice, neural network graphs are really just directed acyclic graphs (DAG). This makes training the neural network possible using the *backpropagation* algorithm. *Recurrent neural networks* (RNN) is the canonical class of such networks which are often used for sequence data such as text. 
+
 ### 2.5: Structure and Semantics of Neural Networks
+
+We are now ready to formally define neural networks as directed acylic graphs. We will also discuss some of their properties. 
+
+**Definition.** (Neural Network). *Revised*\
+A *neural network* is a directed acylic graph \\(G = \left(V, E\right\)\\) where 
+- \\(V\\) is a finite set of nodes
+- \\(E\subseteq V \times V\\) is a set of edges
+- \\ \varnothing \neq V^{\text{in}} \subset V\\) is a non-empty set of input nodes
+- \\ \varnothing \neq V^{\text{o}} \subset V\\) is a non-empty set of output nodes
+- each non-input node \\(v\\) is associated with a function \\(f_v:\mathbb{R}^{n_v}\longrightarrow\mathbb{R}\\) where \\(n_v\\) is the number of edges whose target is node \\(v\\).
+
+There exists more graph theory in this section that I will not write in the markdown. 
+
+So far, we have assumed that a node \\(v\\) can implement any function \\(f_v\\) it wants over the reals. In practice, to enable efficient training of neural networks, these functions ideally must be *differentiable* or differentiable *almost everywhere*. 
+
+- The sigmoid function is differentiable.
+- The ReLU activation function is differentiable everywhere except at \\(x = 0\\) where we have undefined gradient.
+
+Neural networks are an instance of a general class of programs called *differentiable programs*. By their name, differential programs have derivatives that we can compute which as discussed enables efficient neural network training. However, there has been an interest in what does it actually mean for a program to be differentiable. 
 
 ## Chapter 3: Correctness Properties
 
