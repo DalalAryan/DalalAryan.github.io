@@ -43,7 +43,7 @@ But what about deep learning? Is functional correctness relevant here? Well, sin
 
 However, we can still use the verification framework to characterize some of its desirable and undesirable properties.
 
-- **Robustness**: Robustness means that a small perturbation $\varepsilon$ to inputs should not result in changes to the output of the neural network. A lack of robustness can be a safety/security risk.
+- **Robustness**: Robustness means that a small perturbation \(\varepsilon\) to inputs should not result in changes to the output of the neural network. A lack of robustness can be a safety/security risk.
 - **Safety**: A broad class of correctness properties stipulating that a program should not get to a bad state. What does bad mean here? That depends on the task at hand. 
 - **Consistency**: Neural networks learn about our world via data, such as images. As such, they may sometimes miss basic axioms that we as humans are in fact aware of through experience. What are these axioms? Physical laws or assumptions about realistic scenarios.
 
@@ -60,12 +60,13 @@ The *shapes* of said graphs (called the *architecture*) are not arbitrary and in
 **Definition.** (Neural Network).\
 A *Neural Network* is a graph where each node performs an operation.
 
-Overall, the graph represents a function $f:\mathbb{R}^n \longrightarrow \mathbb{R}^n$. A simple neural network contains an *input node* that passes an input $x \in \mathbb{R}$ to a *node* $v$ that performs some operation on $x$ and spits out a value that goes to the *output node*. 
+Overall, the graph represents a function \(f:\mathbb{R}^n \longrightarrow \mathbb{R}^n\). A simple neural network contains an *input node* that passes an input \(x \in \mathbb{R}\) to a *node* $v$ that performs some operation on $x$ and spits out a value that goes to the *output node*. 
 
-Suppose the node $v$ is defined to perform the operation $f_v\left(x\right) = 5x + 3$ where $x$ comes from the input node. Then, output node performs the operation $\max \left(0, x\right)$. Combining, our graph encodes the function $f:\mathbb{R} \longrightarrow \mathbb{R}$ defined as follows,
-$$f\left(x\right) = \left(f_y \circ f_v\right)\left(x\right) = \max\left(0, 5x + 3\right)$$
+Suppose the node $v$ is defined to perform the operation \(f_v\left(x\right) = 5x + 3\) where $x$ comes from the input node. Then, output node performs the operation \(\max \left(0, x\right)\). Combining, our graph encodes the function \(f:\mathbb{R} \longrightarrow \mathbb{R}\) defined as follows,
 
-We have a name for $f_y$: it's called an *activation* function. The name speaks for itself: it turns on or off depending on what is fed to it. The function $\max\left(0, x\right) is an activation function called the *rectified linear unit* (ReLU). Suppose $x = -5$, then $\max\left(0, -5\right) = 0$. However, if $x = 7$, then $\max\left(0, 7\right) = 7$. 
+\[f\left(x\right) = \left(f_y \circ f_v\right)\left(x\right) = \max\left(0, 5x + 3\right)\]
+
+We have a name for \(f_y\): it's called an *activation* function. The name speaks for itself: it turns on or off depending on what is fed to it. The function \(\max\left(0, x\right)\) is an activation function called the *rectified linear unit* (ReLU). Suppose \(x = -5\), then \(\max\left(0, -5\right) = 0\). However, if \(x = 7\), then \(\max\left(0, 7\right) = 7\). 
 
 - Activations functions are used to add non-linearity into a neural network.
 
@@ -76,7 +77,7 @@ But what makes activation functions so special? Empirically, activation function
 
 ### 2.2: Layers and Layers and Layers
 
-Neural networks are usually *layered*. A multilayer perceptron denotes a function $f:\mathbb{R}^3 \longrightarrow \mathbb{R}^3$. It has 3 input nodes, 3 hidden nodes (in 1 hidden layer) and 3 output nodes. 
+Neural networks are usually *layered*. A multilayer perceptron denotes a function \(f:\mathbb{R}^3 \longrightarrow \mathbb{R}^3\). It has 3 input nodes, 3 hidden nodes (in 1 hidden layer) and 3 output nodes. 
 
 A multilayer perceptron with two hidden layers preserves 3 input and 3 output nodes but instead has 6 hidden nodes (3 per hidden leayer). 
 
