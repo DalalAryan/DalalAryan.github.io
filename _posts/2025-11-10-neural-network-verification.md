@@ -121,6 +121,58 @@ Neural networks are an instance of a general class of programs called *different
 
 ## Chapter 3: Correctness Properties
 
+The purpose of this section is introduce a *language* for specifying properties of neural networks. Specification language is a formulaic way of making statements about the behavior of a neural network. For now, we simply care about specifying properties, not verifying them (that will come later). In particular, we will consider all properties (good, bad, etc.) however, in Part II and III, we will constrain properties of interest to fit certain verification algorithms. 
+
+### 3.1: Properties, Informally
+
+The properties we consider are of the form 
+
+**for any input** \\(x\\), the neural network **produces an output** that...
+
+Properties dictate the input-output behavior of the network, not the internals of the network. Properties talking about inputs are called a *precondition*, whilst properties talking about outputs are called *postcondition*. 
+
+We will now explore a couple of examples to expand on the precondition-postcondition couple. 
+
+**Example. (Image Recognition)**\
+Suppose we have a neural network \\(f\\) that takes an image as an input and predicts a label from *poodle, german shepherd*. An important property we care about is robustness of such a classifier. 
+
+What do we mean by robustness? Recall that a classifier is robust if its prediction does not change with small variations, \\(\varepsilon\\), of the input. In particular, if we were to make an image slightly corrupt by introducing certain inconsistencies (perhaps greater brightness, more noise), our neural network should not change its classification. 
+
+Fix an image \\(c\\) that is classified as *german shepherd* by neural network \\(f\\). To ensure that \\(c\\) is not an *adversarial image* of a german shepherd that is designed to fool the neural network, we will check--*prove* or *verify*--the following property:
+
+for any image \\(x\\) that is slightly brighter or darker than \\(c\\), \\(f\left(x\right)\\) predicts *german shepherd*
+
+- The precondition specifies a set of images \\(x\\) that are brither or darker than c.
+- The postcondition specifies that the classification by neural network \\(f\\) remains unchanged given a perturbation.
+
+We care about robustness because it's a desirable property in terms of classification models. Ideally, we don't want our classification to change given aa small movement in a particular property even if the *meaningful* content within an image remains unchanged. 
+
+However, a major limitation here is that robustness is not with respect to a single property, in general, we desire robustness with respect to several properties and so, we must choose a set of properties as it's impractical to choose all. 
+
+The author explores other similar robustness examples in Natural Language Processing, Source Code, and Controllers that are similar to the above example which I will omit from this post. 
+
+### 3.2: A Specification Language
+
+We define our specifications to look like the following:
+\\[ \textit{precondition} \\]
+\\[r \leftarrow f\left(x\right)\\]
+\\[ \textit{postcondition} \\]
+
+- The *precondition* is a Boolean function (*predicate*) that evaluates to true or false.
+- Precondition is defined over a set of variables which will be used as inputs to the neural network we're reasoning about.
+- The *postcondition* is a Boolean predicate over the variables appearing in the precondition \\(x_i\\) and the assigned variables \\(r_j\\)
+
+We read specification, informally as follows:
+
+\\[\text{for any values of } x_1, \dots, x_n \text{ that make the precondition true, let } r_1 = f\left(x_1\right), r_2 = g\left(x_2\right), \dots \text{ then the postcondition is true}\\]
+
+If a correctness property is not true, i.e., the postcondition yields false, we will also say that the property does not hold. 
+
+**Definition.** (Counterexample).\
+A *counterexample* to a property is a valuation of the variables in the precondition that falsifies the postcondition. 
+
+The specification language discussed above is similar to the specifications written in Hoare Logic ('An Axiomatic Basis for Computer Programming', C.A.R. Hoare, MIT, 1969). Hoare logic comes equipped with deduction rules that allows one to prove the validity of such specifications. This is simply a note to be made as Hoare logic will appear later in Aws' book. 
+
 I will update this chapter once I have finished reading it!
 
 Last Updated: November 13, 2025
