@@ -21,22 +21,14 @@ Below is a selected list of problems & exercises that I had worked on when I too
 2. Second Order:
 
 **Problem 2.** Suppose we have matrices \\(\mathbf{Y} \in \mathbb{R}^{d\times n}\\) and \\(\mathbf{X} \in \mathbb{R}^{d\times r}\\). We seek to find a matrix \\(\hat{\mathbf{B}} \in \mathbb{R}^{r\times n}\\) where:
-\\[\|\mathbf{Y} - \mathbf{XB}\|_F^2 + \lambda\|\mathbf{F}\|_F^2 \tag{1}\\] 
+\\[\|\|\mathbf{Y} - \mathbf{XB}\|\|_F^2 + \lambda\|\|\mathbf{F}\|\|_F^2 \tag{1}\\] 
 Here \\(\lambda \geq 0\\) is called the \\(L_2\\)-regularization parameter. (This is an instance of unconstrained quadratic optimization problem).
 
 1. Show that
 
-\\[
-\|\mathbf{Y} - \mathbf{XB}\|_F^2 + \lambda \|\mathbf{B}\|_F^2
-= \text{trace}\left[(\mathbf{Y} - \mathbf{XB})^\top(\mathbf{Y} - \mathbf{XB})\right]
-+ \lambda\,\text{trace}\left(\mathbf{B}^\top\mathbf{B}\right)
-\\]
-\\[
-= \text{trace}(\mathbf{Y}^\top\mathbf{Y})
-- 2\,\text{trace}(\mathbf{Y}^\top \mathbf{X}\mathbf{B})
-+ \text{trace}(\mathbf{B}^\top\mathbf{X}^\top \mathbf{X}\mathbf{B})
-+ \lambda\,\text{trace}(\mathbf{B}^\top\mathbf{B})
-\\]
+\\[\|\|\mathbf{Y} - \mathbf{XB}\|\|_F^2 + \lambda \|\|\mathbf{B}\|\|_F^2 = \text{trace}\left[(\mathbf{Y} - \mathbf{XB})^\top(\mathbf{Y} - \mathbf{XB})\right] + \lambda\,\text{trace}\left(\mathbf{B}^\top\mathbf{B}\right)\\]
+  
+\\[= \text{trace}(\mathbf{Y}^\top\mathbf{Y}) - 2\,\text{trace}(\mathbf{Y}^\top \mathbf{X}\mathbf{B}) + \text{trace}(\mathbf{B}^\top\mathbf{X}^\top \mathbf{X}\mathbf{B}) + \lambda\,\text{trace}(\mathbf{B}^\top\mathbf{B})\\]
   
 3. Show that
 4. Argue that the quadratic function \\(\mathbf{B} \longmapsto \|\mathbf{Y} - \mathbf{XB}\|_F^2\\) is convex, and hence its every critical point is a local minimum.
