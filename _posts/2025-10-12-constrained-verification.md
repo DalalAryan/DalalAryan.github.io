@@ -26,14 +26,14 @@ The constraints we will use are formulas in *first-order logic* (FOL).
 
 **Definition.** (Formula)\
 A formula \\(F\\) in propositional logic is over Boolean variables (traditionally given the names \\(p, q, r, \dots\\) and defined using the following grammar:
-\\begin{align}\notag
-  F := &\verb|true|  & \text{}\\
-       &\verb|false| & \text{}\\
-       &\text{var}   & \text{Variable}\\
-       &\mid ~ F \land V & \text{Conjunction (and)} \\
-       &\mid ~ F \wedge V & \text{Disjunction (or)} \\
-       &\mid ~ \neg F & \text{Negation (not)}
-\\end{align}
+\\[F:= \verb|true|\\]
+\\[\verb|false|\\]
+\\[\text{var}\\]
+\\[\mid ~ F \land V\\]
+\\[\mid ~ F \wedge V\\]
+\\[&\mid ~ \neg F\\]
+
+where 'var' corresponds to variable, \\(\land\\) to conjunction (and), \\(\wedge\\) to disjunction (or) and \\(\neg\\) to negation (not) respectively. 
 
 A formula in propositional logic defined a circuit with Boolean variables, \\(\verb|AND|\\) gates (\\(\land)\\), \\(\verb|OR|\\) gates (\\(\wedge)\\), and \\(\verb|NOT|\\) gates (\\(\neg)\\). 
 
@@ -44,10 +44,10 @@ A formula in propositional logic defined a circuit with Boolean variables, \\(\v
 We define all programs as circuits because programs will be performed on computers through bit-sized information and there exists a finite amount of memory, and therefore, a finite number of variables. 
 
 **Example.** As an example, consider the below formula:
-\\[F \triangleq \left(p \land q\right) \wedge \neg r\right)\\]
+\\[F \triangleq (p \land q\right) \wedge \neg r\\]
 
 - \\(\triangleq\\) denotes that we're syntactically defining \\(F\\) to be the formula on the right of \\(\triangleq\\) as opposed to saying that the two formulas are semantically equivalent.
-- The set of free variables in \\(F\\) is \\(fv\left(F\right) = \left\{p, q, r\right\}\\).
+- The set of free variables in \\(F\\) is \\(fv(F) = {p, q, r}\\).
 
 I will complete the next parts soon.
 
