@@ -26,8 +26,17 @@ Here \\(\lambda \geq 0\\) is called the \\(L_2\\)-regularization parameter. (Thi
 
 1. Show that
 
-\\[\|\mathbf{Y} - \mathbf{XB}\|_F^2 + \lambda \|\mathbf{B}\|_F^2 = \text{trace}\left[\left(\mathbf{Y} - \mathbf{XB}\right)^\top\left(\mathbf{Y}-\mathbf{XB}\right)\right] + \lambda\text{trace}\left(\mathbf{B}^\top\mathbf{B} \\]
-\\[ = \text{trace}\left(\mathbf{Y}^\top\mathbf{Y}\right) - 2\text{trace}\left(\mathbf{Y}^\top \mathbf{XB}\right) + \text{trace}\left(\mathbf{B}^\top\mathbf{X}^\top \mathbf{X}\mathbf{B}\right) + \lambda\text{trace}\left(\mathbf{B}^\top\mathbf{B}\right) \\]
+\\[
+\|\mathbf{Y} - \mathbf{XB}\|_F^2 + \lambda \|\mathbf{B}\|_F^2
+= \text{trace}\left[(\mathbf{Y} - \mathbf{XB})^\top(\mathbf{Y} - \mathbf{XB})\right]
++ \lambda\,\text{trace}\left(\mathbf{B}^\top\mathbf{B}\right)
+\\]
+\\[
+= \text{trace}(\mathbf{Y}^\top\mathbf{Y})
+- 2\,\text{trace}(\mathbf{Y}^\top \mathbf{X}\mathbf{B})
++ \text{trace}(\mathbf{B}^\top\mathbf{X}^\top \mathbf{X}\mathbf{B})
++ \lambda\,\text{trace}(\mathbf{B}^\top\mathbf{B})
+\\]
   
 3. Show that
 4. Argue that the quadratic function \\(\mathbf{B} \longmapsto \|\mathbf{Y} - \mathbf{XB}\|_F^2\\) is convex, and hence its every critical point is a local minimum.
