@@ -44,10 +44,10 @@ A formula in propositional logic defined a circuit with Boolean variables, AND g
 We define all programs as circuits because programs will be performed on computers through bit-sized information and there exists a finite amount of memory, and therefore, a finite number of variables. 
 
 **Example.** As an example, consider the below formula:
-\\[F \triangleq (p \land q\right) \wedge \neg r\\]
+\\[F \triangleq (p \land q) \wedge \neg r\\]
 
 - \\(\triangleq\\) denotes that we're syntactically defining \\(F\\) to be the formula on the right of \\(\triangleq\\) as opposed to saying that the two formulas are semantically equivalent.
-- The set of free variables in \\(F\\) is \\(fv(F) = {p, q, r}\\).
+- The set of free variables in \\(F\\) is \\(fv(F) = \{p, q, r\}\\).
 
 I will complete the next parts soon.
 
