@@ -1,6 +1,6 @@
 ---
 title: 'Math 156 - Machine Learning Problems & Exercises'
-date: 2025-11-10
+date: 2025-11-17
 permalink: /posts/2025/11/math156-machinelearning/
 tags:
   - math
@@ -26,12 +26,8 @@ Here \\(\lambda \geq 0\\) is called the \\(L_2\\)-regularization parameter. (Thi
 
 1. Show that
 
-\\[
-\begin{align}\notag
-  \|\mathbf{Y} - \mathbf{XB}\|_F^2 + \lambda \|\mathbf{B}\|_F^2 &= \text{trace}\left[\left(\mathbf{Y} - \mathbf{XB}\right)^\top\left(\mathbf{Y}-\mathbf{XB}\right)\right] + \lambda\text{trace}\left(\mathbf{B}^\top\mathbf{B} \\\notag
-  &= \text{trace}\left(\mathbf{Y}^\top\mathbf{Y}\right) - 2\text{trace}\left(\mathbf{Y}^\top \mathbf{XB}\right) + \text{trace}\left(\mathbf{B}^\top\mathbf{X}^\top \mathbf{X}\mathbf{B}\right) + \lambda\text{trace}\left(\mathbf{B}^\top\mathbf{B}\right)
-\end{align}
-\\]
+\\[\|\mathbf{Y} - \mathbf{XB}\|_F^2 + \lambda \|\mathbf{B}\|_F^2 = \text{trace}\left[\left(\mathbf{Y} - \mathbf{XB}\right)^\top\left(\mathbf{Y}-\mathbf{XB}\right)\right] + \lambda\text{trace}\left(\mathbf{B}^\top\mathbf{B} \\]
+\\[ = \text{trace}\left(\mathbf{Y}^\top\mathbf{Y}\right) - 2\text{trace}\left(\mathbf{Y}^\top \mathbf{XB}\right) + \text{trace}\left(\mathbf{B}^\top\mathbf{X}^\top \mathbf{X}\mathbf{B}\right) + \lambda\text{trace}\left(\mathbf{B}^\top\mathbf{B}\right) \\]
   
 3. Show that
 4. Argue that the quadratic function \\(\mathbf{B} \longmapsto \|\mathbf{Y} - \mathbf{XB}\|_F^2\\) is convex, and hence its every critical point is a local minimum.
