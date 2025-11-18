@@ -47,7 +47,7 @@ We define all programs as circuits because programs will be performed on compute
 \\[F \triangleq (p \land q) \wedge \neg r\\]
 
 - \\(\triangleq\\) denotes that we're syntactically defining \\(F\\) to be the formula on the right of \\(\triangleq\\) as opposed to saying that the two formulas are semantically equivalent.
-- The set of free variables in \\(F\\) is \\(fv(F) = \{p, q, r\}\\).
+- The set of free variables in \\(F\\) is \\(fv(F) = \left\{p, q, r\right\}\\).
 
 I will complete the next parts soon.
 
