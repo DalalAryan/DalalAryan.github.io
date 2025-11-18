@@ -31,11 +31,11 @@ A formula \\(F\\) in propositional logic is over Boolean variables (traditionall
 \\[\text{var}\\]
 \\[\mid ~ F \land V\\]
 \\[\mid ~ F \wedge V\\]
-\\[&\mid ~ \neg F\\]
+\\[\mid ~ \neg F\\]
 
 where 'var' corresponds to variable, \\(\land\\) to conjunction (and), \\(\wedge\\) to disjunction (or) and \\(\neg\\) to negation (not) respectively. 
 
-A formula in propositional logic defined a circuit with Boolean variables, \\(\verb|AND|\\) gates (\\(\land)\\), \\(\verb|OR|\\) gates (\\(\wedge)\\), and \\(\verb|NOT|\\) gates (\\(\neg)\\). 
+A formula in propositional logic defined a circuit with Boolean variables, AND gates (\\(\land)\\), OR gates (\\(\wedge)\\), and NOT gates (\\(\neg)\\). 
 
 - Negation has the highest operator precedence
 - Conjunction has an operator precedence after negation
