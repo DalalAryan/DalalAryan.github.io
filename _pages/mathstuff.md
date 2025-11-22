@@ -14,11 +14,11 @@ Some Interesting Math I Have Come Across (Excerpts from Lectures and Otherwise)
 
 This was a homework problem from Fall 2025 Math 131AH - Honors Real Analysis at UCLA. The rather cool aspect of this problem comes from the fact that the interval \\(\left(0, 1\right)\\) also has cardinality \\(2^{\aleph_0}\\). In particular, this is to say that the *size* of \\(\mathbb{R}\\) is the same as the size of the interval \\(\left(0, 1\right)\\). 
 
-It's important that we don't confuse *size* (and therefore, cardinality) with *length* (Lebesgue measure) because they describe two completely different properties of numbers. While the cardinality of \\(\left(0, 1\right)\\) equals that of \\(\mathbb{R}\\), the length of they differ. Indeed, if \\(\ell\\) describe the length of an interval, then \\(\ell\left(\left(0, 1\right)\right) = 1\\) while \\(\ell\left(\mathbb{R}\right) = \infty\\). 
+It's important that we don't confuse *size* (and therefore, cardinality) with *length* (Lebesgue measure) because they describe two completely different properties of numbers. While the cardinality of \\(\left(0, 1\right)\\) equals that of \\(\mathbb{R}\\), the length of them differ. Indeed, if \\(\ell\\) describe the length of an interval, then \\(\ell\left(\left(0, 1\right)\right) = 1\\) while \\(\ell\left(\mathbb{R}\right) = \infty\\). 
 
 With this important note, let's head to the proof. 
 
-*Proof.* We will use the fact that the interval \\(\left(0, 1\right)\\) has cardinality \\(2^{\aleph_n}\\). We want to use Schröder-Bernstein such that we can establish equipotence between \\(\left(0, 1\right)\\) and \\(\mathbb{R}\\) by showing an injection \\(\phi:\left(0, 1\right) \longrightarrow \mathbb{R}\\) and another injection \\(\psi:\mathbb{R} \longrightarrow \left(0, 1\right)\\). 
+*Proof.* We will use the fact that the interval \\(\left(0, 1\right)\\) has cardinality \\(2^{\aleph_0}\\). We want to use Schröder-Bernstein such that we can establish equipotence between \\(\left(0, 1\right)\\) and \\(\mathbb{R}\\) by showing an injection \\(\phi:\left(0, 1\right) \longrightarrow \mathbb{R}\\) and another injection \\(\psi:\mathbb{R} \longrightarrow \left(0, 1\right)\\). 
 
 Let \\(\phi:\left(0, 1\right) \longrightarrow \mathbb{R}\\) defined via the identity map \\(\phi\left(x\right) = x\\). Note \\(\left(0, 1\right) \subseteq \mathbb{R}\\). 
 
