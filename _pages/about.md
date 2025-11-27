@@ -19,8 +19,8 @@ I'm learning about Mathematical Machine Learning, Convex & Non-Convex Optimizati
 - IEEE Autonomous Vehicle Project with Robot Operating System, Convolutional Neural Networks and Raspberry Pi.
 
 ## Seminars, Conferences, Events & Talks
-- Participant, Verification, Expressivity and Parameterization of ReLU Neural Networks by Moritz Gillo, Max Plank Institute MIS\
-  (UCLA Applied Mathematics Colloqium & UCLA Mathematical Machine Learning Seminar; November 26 2025)
+<!-- - Participant, Verification, Expressivity and Parameterization of ReLU Neural Networks by Moritz Gillo, Max Plank Institute MIS\
+  (UCLA Applied Mathematics Colloqium & UCLA Mathematical Machine Learning Seminar; November 26 2025) -->
 - Admitted Scholar, Practicum for Undergraduate Admissions in Inverse Problems and Data Assimilation\
   (UCLA NSF Institute for Pure & Applied Mathematics; November 23-24, 2025)
 
