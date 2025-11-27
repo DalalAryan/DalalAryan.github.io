@@ -7,8 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-## Aryan Dalal
-
 Hi! I am a 2nd year Applied Mathematics & Computer Science Engineering undergraduate at UCLA. I am working with [Guido Montúfar](https://www.math.ucla.edu/~montufar/) at the [Mathematical Machine Learning Group](https://www.math.ucla.edu/~montufar/#People) on Quantification and Verification of AI Systems. 
 
 ## Academic Interests
