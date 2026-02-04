@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-Last Updated: September 30, 2025
+Last Updated: February 03, 2025
 
 ### Spring 2026
 
