@@ -40,6 +40,7 @@ Last Updated: September 30, 2025
 | STATS 13 | Statistical Methods in Life Sciences | Dale Kim | A |
 
 ### Summer 2025
+
 | Course | Name | Professor | Grade |
 |--------|------|-----------|-------|
 | COM SCI 32 | Data Structures & Algorithms | Bruce Huang | A+ |
