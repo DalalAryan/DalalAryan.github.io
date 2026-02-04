@@ -24,11 +24,11 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Aryan Dalal"
-  pronouns         : "He/Him" 
-  bio              : "Applied Math & CSE Undergrad"
+  pronouns         : 
+  bio              : "Applied Mathematics and Computer Science Engineering at UCLA"
   location         : "Los Angeles, CA"
   employer         : "UCLA"
-  uri              : # URL
+  url              : "DalalAryan.github.io"
   email            : "aryandalal@ucla.edu" 
 
   # Academic websites
@@ -61,7 +61,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "https://www.linkedin.com/in/dalalaryan/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
