@@ -50,11 +50,11 @@ Last Updated: September 30, 2025
 
 | Course | Name | Professor | Grade |
 |--------|------|-----------|-------|
-| MATH 135 | Ordinary Differential Equations | A |
-| MATH 136 | Partial Differential Equations | A |
-| MATH 164 | Convex & Non-Convex Optimization Theory | A- | 
-| MATH 142 | Mathematical Modeling | A- | 
-| MATH 192 | Undergraduate Teaching Assistant Program | A | 
+| MATH 135 | Ordinary Differential Equations | Mo Zhou | A |
+| MATH 136 | Partial Differential Equations | Patrick Flynn | A |
+| MATH 164 | Convex & Non-Convex Optimization Theory | Willem Diepeeven | A- | 
+| MATH 142 | Mathematical Modeling | Mason Porter | A- | 
+| MATH 192 | Undergraduate Teaching Assistant Program | Multiple | A | 
 
 ### Winter 2025
 
