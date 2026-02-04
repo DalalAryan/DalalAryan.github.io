@@ -7,12 +7,18 @@ redirect_from:
   - /resume
 ---
 
-**Important Note**: I am still working on updating lecture notes for several courses. So far, Math 170E, Math 136, Math 32AH and Math 31B are ready to access. 
-
 Last Updated: September 30, 2025
 
-Fall 2025
--------
+### Winter 2026
+
+| Course | Name | Professor | Grade |
+|--------|------|-----------|-------|
+| COM SCI M151B | Computer Systems Architecture | Blaise Tine | IP |
+| COM SCI 145 | Introduction to Data Mining | Yizhou Sun | IP |
+| PHYSICS 1A | Mechanics | Giovanni Zocchi | IP |
+| ENGCOMP 3 | English Composition, Rhetoric & Language | Nedda Mehdizadeh | IP |
+| MUSCLG 7 | Film Music | Holley Replogle Wong | IP |
+
 
 MATH 131AH: Honors Real Analaysis I\
 Lectures by *Monica Visan*, Professor, UCLA Math\
