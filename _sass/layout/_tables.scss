@@ -36,3 +36,39 @@ td {
 tr, td, th {
   vertical-align: middle;
 }
+
+.course-table {
+  table-layout: fixed;
+}
+
+.course-table th,
+.course-table td {
+  word-wrap: break-word;
+}
+
+/* Course / Name / Professor / Grade */
+.course-table th:nth-child(1),
+.course-table td:nth-child(1) {
+  width: 18%;
+}
+
+.course-table th:nth-child(2),
+.course-table td:nth-child(2) {
+  width: 47%;
+}
+
+.course-table th:nth-child(3),
+.course-table td:nth-child(3) {
+  width: 23%;
+}
+
+.course-table th:nth-child(4),
+.course-table td:nth-child(4) {
+  width: 12%;
+}
+
+/* Center grades */
+.course-table th:nth-child(4),
+.course-table td:nth-child(4) {
+  text-align: center;
+}
