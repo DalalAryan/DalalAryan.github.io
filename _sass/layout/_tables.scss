@@ -73,6 +73,10 @@ tr, td, th {
   text-align: center;
 }
 
+.course-table thead th {
+  border-bottom: 2px solid var(--global-border-color);
+}
+
 .author__avatar img {
   border-radius: 6px !important;
 }
