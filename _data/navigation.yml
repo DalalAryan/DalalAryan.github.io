@@ -20,28 +20,31 @@ main:
  # - title: "Blog Posts"
  #   url: /year-archive/
     
-  - title: "CV"
-    url: /cv/
+ # - title: "CV"
+ #  url: /cv/
 
-  - title: "Research"
-    url: /year-archive/
-
-  - title: "CS Projects"
+  - title: "Projects"
     url: /programming/
+
+  - title: "Papers"
+    url: /papers/
+
+ # - title: "Research"
+ #  url: /year-archive/
 
   # - title: "Blog"
   # url: /year-archive/
 
-  - title: "Math Stuff"
+  - title: "Math"
     url: /mathstuff/
 
-  - title: "UCLA Lecture Notes"
+  - title: "Classes"
     url: /lecturenotes/
 
   # - title: "Axioms"
   #  url: /axioms/
 
-  - title: "Miscellaneous"
+  - title: "Hobbies"
     url: /miscellaneous/
     
   # - title: "CV"
