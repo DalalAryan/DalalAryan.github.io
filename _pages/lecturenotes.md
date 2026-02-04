@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Lecture Notes"
+title: "Classes & Notes"
 permalink: /lecturenotes/
 author_profile: true
 redirect_from:
