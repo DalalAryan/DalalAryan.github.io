@@ -17,7 +17,6 @@ table {
 
 thead {
   background-color: var(--global-border-color);
-  border-bottom: 1px solid var(--global-border-color);
 }
 
 th {
@@ -33,9 +32,15 @@ td {
   border-right: 1px solid var(--global-border-color);
 }
 
-tr, td, th {
+tr,
+td,
+th {
   vertical-align: middle;
 }
+
+/* ==========================================================================
+   COURSE TABLE (FIXED COLUMN WIDTHS)
+   ========================================================================== */
 
 .course-table {
   table-layout: fixed;
@@ -67,15 +72,20 @@ tr, td, th {
   width: 12%;
 }
 
-/* Center grades */
+/* Center grades / status */
 .course-table th:nth-child(4),
 .course-table td:nth-child(4) {
   text-align: center;
 }
 
+/* Visible separator between header and body */
 .course-table thead th {
-  border-bottom: 2px solid var(--global-border-color);
+  border-bottom: 2px solid var(--global-text-color);
 }
+
+/* ==========================================================================
+   AVATAR (SQUARE WITH SLIGHT ROUNDING)
+   ========================================================================== */
 
 .author__avatar img {
   border-radius: 6px !important;
