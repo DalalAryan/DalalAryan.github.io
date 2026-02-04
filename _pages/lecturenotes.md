@@ -11,67 +11,28 @@ Last Updated: September 30, 2025
 
 ### Spring 2026
 
-| Course | Name | Professor | Grade |
-|--------|------|-----------|-------|
-| COM SCI 162 | Natural Language Processing | Saadia Gabriel | TBD | 
-| COM SCI 35L | Software Laboratory | Tobias Dürschmid | TBD | 
-| PHYSICS 1B | Waves, Oscillations, and Electromagnetism | Alexander Kusenko | TBD |
-| MATH 117 | Abstract Algebra for Applied Mathematics | Wern Yeong | TBD |
-| MATH 180 | Graph Theory | Colleen Robichaux | TBD |
+<table class="course-table"> <tr> <th>Course</th> <th>Name</th> <th>Professor</th> <th>Grade</th> </tr> <tr><td>COM SCI 162</td><td>Natural Language Processing</td><td>Saadia Gabriel</td><td>TBD</td></tr> <tr><td>COM SCI 35L</td><td>Software Laboratory</td><td>Tobias Dürschmid</td><td>TBD</td></tr> <tr><td>PHYSICS 1B</td><td>Waves, Oscillations, and Electromagnetism</td><td>Alexander Kusenko</td><td>TBD</td></tr> <tr><td>MATH 117</td><td>Abstract Algebra for Applied Mathematics</td><td>Wern Yeong</td><td>TBD</td></tr> <tr><td>MATH 180</td><td>Graph Theory</td><td>Colleen Robichaux</td><td>TBD</td></tr> </table>
 
 ### Winter 2026
 
-| Course | Name | Professor | Grade |
-|--------|------|-----------|-------|
-| COM SCI 33 | Computer Systems | Sandra Batista | IP |
-| COM SCI 145 | Introduction to Data Mining | Yizhou Sun | IP |
-| PHYSICS 1A | Mechanics | Giovanni Zocchi | IP |
-| ENGCOMP 3 | English Composition, Rhetoric & Language | Nedda Mehdizadeh | IP |
-| MUSCLG 7 | Film Music | Holley Replogle Wong | IP |
+<table class="course-table"> <tr> <th>Course</th> <th>Name</th> <th>Professor</th> <th>Grade</th> </tr> <tr><td>COM SCI 33</td><td>Computer Systems</td><td>Sandra Batista</td><td>IP</td></tr> <tr><td>COM SCI 145</td><td>Introduction to Data Mining</td><td>Yizhou Sun</td><td>IP</td></tr> <tr><td>PHYSICS 1A</td><td>Mechanics</td><td>Giovanni Zocchi</td><td>IP</td></tr> <tr><td>ENGCOMP 3</td><td>English Composition, Rhetoric &amp; Language</td><td>Nedda Mehdizadeh</td><td>IP</td></tr> <tr><td>MUSCLG 7</td><td>Film Music</td><td>Holley Replogle Wong</td><td>IP</td></tr> </table>
 
 ### Fall 2025
 
-| Course | Name | Professor | Grade |
-|--------|------|-----------|-------|
-| MATH 269A | Graduate Numerical Analysis I | Chenfanfu Jiang | A |
-| MATH 131AH | Honors Real Analysis I | Monica Visan | A- |
-| MATH 156 | Mathematical Machine Learning | Giulio Farolfi | A | 
-| EC ENGR C143A | Neural Signal Processing & Brain Computer Interface | Jonathan Kao | A- |
-| STATS 13 | Statistical Methods in Life Sciences | Dale Kim | A |
+<table class="course-table"> <tr> <th>Course</th> <th>Name</th> <th>Professor</th> <th>Grade</th> </tr> <tr><td>MATH 269A</td><td>Graduate Numerical Analysis I</td><td>Chenfanfu Jiang</td><td>A</td></tr> <tr><td>MATH 131AH</td><td>Honors Real Analysis I</td><td>Monica Visan</td><td>A-</td></tr> <tr><td>MATH 156</td><td>Mathematical Machine Learning</td><td>Giulio Farolfi</td><td>A</td></tr> <tr><td>EC ENGR C143A</td><td>Neural Signal Processing &amp; Brain Computer Interface</td><td>Jonathan Kao</td><td>A-</td></tr> <tr><td>STATS 13</td><td>Statistical Methods in Life Sciences</td><td>Dale Kim</td><td>A</td></tr> </table>
 
 ### Summer 2025
 
-| Course | Name | Professor | Grade |
-|--------|------|-----------|-------|
-| COM SCI 32 | Data Structures & Algorithms | Bruce Huang | A+ |
-| MATH 170E | Introduction to Probability Theory | Giulio Farolfi | A |
+<table class="course-table"> <tr> <th>Course</th> <th>Name</th> <th>Professor</th> <th>Grade</th> </tr> <tr><td>COM SCI 32</td><td>Data Structures &amp; Algorithms</td><td>Bruce Huang</td><td>A+</td></tr> <tr><td>MATH 170E</td><td>Introduction to Probability Theory</td><td>Giulio Farolfi</td><td>A</td></tr> </table>
 
 ### Spring 2025
 
-| Course | Name | Professor | Grade |
-|--------|------|-----------|-------|
-| MATH 135 | Ordinary Differential Equations | Mo Zhou | A |
-| MATH 136 | Partial Differential Equations | Patrick Flynn | A |
-| MATH 164 | Convex & Non-Convex Optimization Theory | Willem Diepeeven | A- | 
-| MATH 142 | Mathematical Modeling | Mason Porter | A- | 
-| MATH 192 | Undergraduate Teaching Assistant Program | Multiple | A | 
+<table class="course-table"> <tr> <th>Course</th> <th>Name</th> <th>Professor</th> <th>Grade</th> </tr> <tr><td>MATH 135</td><td>Ordinary Differential Equations</td><td>Mo Zhou</td><td>A</td></tr> <tr><td>MATH 136</td><td>Partial Differential Equations</td><td>Patrick Flynn</td><td>A</td></tr> <tr><td>MATH 164</td><td>Convex &amp; Non-Convex Optimization Theory</td><td>Willem Diepeeven</td><td>A-</td></tr> <tr><td>MATH 142</td><td>Mathematical Modeling</td><td>Mason Porter</td><td>A-</td></tr> <tr><td>MATH 192</td><td>Undergraduate Teaching Assistant Program</td><td>Multiple</td><td>A</td></tr> </table>
 
 ### Winter 2025
 
-| Course | Name | Professor | Grade |
-|--------|------|-----------|-------|
-| MATH 115AH | Honors Proof-based Linear Algebra I | Joaquin Moraga | A- |
-| MATH 32BH | Honors Multivariate Analysis II | Mark Ebert | A- |
-| MATH 134 | Dynamical Systems | Tung Nguyen | A |
-| COM SCI 31 | Introduction to Computer Science I | A- |
-| MATH 192 | Undergraduate Teaching Assistant Program | A | 
+<table class="course-table"> <tr> <th>Course</th> <th>Name</th> <th>Professor</th> <th>Grade</th> </tr> <tr><td>MATH 115AH</td><td>Honors Proof-based Linear Algebra I</td><td>Joaquin Moraga</td><td>A-</td></tr> <tr><td>MATH 32BH</td><td>Honors Multivariate Analysis II</td><td>Mark Ebert</td><td>A-</td></tr> <tr><td>MATH 134</td><td>Dynamical Systems</td><td>Tung Nguyen</td><td>A</td></tr> <tr><td>COM SCI 31</td><td>Introduction to Computer Science I</td><td></td><td>A-</td></tr> <tr><td>MATH 192</td><td>Undergraduate Teaching Assistant Program</td><td></td><td>A</td></tr> </table>
 
 ### Fall 2024
 
-| Course | Name | Professor | Grade |
-|--------|------|-----------|-------|
-| MATH 31B | Integration & Infinite Series | David Beers | A |
-| MATH 32AH | Honors Multivariable Analysis I | Tyler Arant | A- |
-| CLUSTER M71A | Biotechnology & Society | Multiple | A |
-| COMPTNG 10A | Introduction to Programming with C++ | Xue Feng | A- |
-
+<table class="course-table"> <tr> <th>Course</th> <th>Name</th> <th>Professor</th> <th>Grade</th> </tr> <tr><td>MATH 31B</td><td>Integration &amp; Infinite Series</td><td>David Beers</td><td>A</td></tr> <tr><td>MATH 32AH</td><td>Honors Multivariable Analysis I</td><td>Tyler Arant</td><td>A-</td></tr> <tr><td>CLUSTER M71A</td><td>Biotechnology &amp; Society</td><td>Multiple</td><td>A</td></tr> <tr><td>COMPTNG 10A</td><td>Introduction to Programming with C++</td><td>Xue Feng</td><td>A-</td></tr> </table>
