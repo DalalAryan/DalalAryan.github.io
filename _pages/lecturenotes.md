@@ -40,7 +40,7 @@ Last Updated: September 30, 2025
 
 <table class="course-table"> <tr> <th>Course</th> <th>Name</th> <th>Professor</th> <th>Lecture Note</th> </tr> 
   <tr><td>COM SCI 32</td><td>Data Structures &amp; Algorithms</td><td>Bruce Huang</td><td> Soon </td></tr> 
-  <tr><td>MATH 170E</td><td>Introduction to Probability Theory</td><td>Giulio Farolfi</td><td> [Link](https://github.com/DalalAryan/uclamathlecturenotes/blob/main/MATH%20170E%20Probability%20for%20Scientists%20and%20Engineers.pdf) </td></tr> </table>
+  <tr><td>MATH 170E</td><td>Introduction to Probability Theory</td><td>Giulio Farolfi</td><td><a href="https://github.com/DalalAryan/uclamathlecturenotes/blob/main/MATH%20170E%20Probability%20for%20Scientists%20and%20Engineers.pdf">MATH 170E Notes</a></td></tr> </table>
 
 ### Spring 2025
 
@@ -63,7 +63,7 @@ Last Updated: September 30, 2025
 ### Fall 2024
 
 <table class="course-table"> <tr> <th>Course</th> <th>Name</th> <th>Professor</th> <th>Lecture Note</th> </tr> 
-  <tr><td>MATH 31B</td><td>Integration &amp; Infinite Series</td><td>David Beers</td><td> [Link](https://github.com/DalalAryan/uclamathlecturenotes/blob/main/MATH%2031B%20Lecture%20Notes.pdf) </td></tr> 
-  <tr><td>MATH 32AH</td><td>Honors Multivariable Analysis I</td><td>Tyler Arant</td><td> [Link](https://github.com/DalalAryan/uclamathlecturenotes/blob/main/MATH%2032AH%20Lecture%20Notes.pdf) </td></tr> 
+  <tr><td>MATH 31B</td><td>Integration &amp; Infinite Series</td><td>David Beers</td><td> <a href="https://github.com/DalalAryan/uclamathlecturenotes/blob/main/MATH%2031B%20Lecture%20Notes.pdf">MATH 31B Notes</a> </td></tr> 
+  <tr><td>MATH 32AH</td><td>Honors Multivariable Analysis I</td><td>Tyler Arant</td><td> <a href="https://github.com/DalalAryan/uclamathlecturenotes/blob/main/MATH%2032AH%20Lecture%20Notes.pdf">MATH 32AH Notes</a> </td></tr> 
   <tr><td>CLUSTER M71A</td><td>Biotechnology &amp; Society</td><td>Multiple</td><td> Not Available </td></tr> 
   <tr><td>COMPTNG 10A</td><td>Introduction to Programming with C++</td><td>Xue Feng</td><td> Not Available </td></tr> </table>
