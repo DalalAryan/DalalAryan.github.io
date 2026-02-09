@@ -19,7 +19,7 @@ Machine Learning in Applied Physical Sciences, Optimization & Learning Theory, C
 
 ### Latest News
 
-test test test
+I am travelling to New York City for the Intercollegiate Math Tournament at Columbia University on behalf of UCLA!
 
 You can reach me by email at [aryandalal@ucla.edu](aryandalal@ucla.edu). 
 Last Updated: February 03, 2026
