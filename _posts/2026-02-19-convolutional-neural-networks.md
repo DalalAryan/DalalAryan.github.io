@@ -60,10 +60,30 @@ The 2D convolution is given by
 \\]
 This generalizes to higher dimensions as well. This is nice because we will be working with tensors in image data. Do note that "convolutions" are not commutative. 
 
+### Convolutional Padding and Strides
+
 ## The Pooling Layer
+
+### Max-Pooling
+
+### Avg-Pooling
 
 ## Biases in Convolutional Layers
 
 ## Convolutional Neural Network Architecture
 
 ## Memory and Time Complexity Details
+
+## Biological Inspiration for the CNN
+
+## History of Convolutional Neural Network Architectures
+
+### LeNet (1998)
+
+### AlexNet (2012)
+
+### VGG (2013)
+
+### GoogleLeNet (2014)
+
+### ResNet (2015)
