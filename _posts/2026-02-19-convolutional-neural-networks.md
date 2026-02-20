@@ -80,10 +80,12 @@ x_{21} & x_{22}
 *Avg-pool* averages every patch into a single scalar. For example, a \\(2\times2\\) avg-pool on a \\(1\times2\times2\\) input \\(X\\) is given by:
 
 \\[
-\text{avg-pool}\left(X = \begin{bmatrix}
-x_{11} & x_{12}\\
+\text{avg-pool}\left(X = 
+\begin{bmatrix}
+x_{11} & x_{12} \\
 x_{21} & x_{22}
-\end{bmatrix}\right) = \text{avg}\left(X\right) = \frac{1}{4}\sum_{1\leq i, j \leq 2} x_{ij}
+\end{bmatrix}
+\right) = \text{avg}\left(X\right) = \frac{1}{4}\sum_{1\leq i, j \leq 2} x_{ij}
 \\]
 
 ### Max-Pooling
