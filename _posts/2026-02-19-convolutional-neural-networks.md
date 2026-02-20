@@ -37,6 +37,11 @@ In particular, there exists a need for a type of an image classifier that is pos
 
 So, we introduce the **convolutional neural network**, an adaptation of a simple neural network designed specifically for image classification. We ideally want a kind of classifer that is able to learn patterns in images that are *shift-invariant*, meaning that the location of a certain geometric pattern in the image matters less. We also want our classifier to learn abstract patterns. For example, the first layer could learn edges and color features while the second layer could learn larger curves and shapes. 
 
+Asssume we have a set of discrete classes (labels), then given an image, design a classifier $f$ to determine which class it belongs to. Consider the following example. Set of classes \\(=\left\{\text{cat, dog, rabbit}\right\}\\). The classifier \\(f\\) should be able to determine
+\\[f\left(\text{image of rabbit}\right) = \text{class rabit} \\]
+
+The image classification framework we follow with the convolutional neural network will be expanded further when we present the full-stack architecture. A couple of core datasets used in image classification are MNIST and CIFAR. MNIST is a set of 60000 training images and 10000 testing images of 28-by-28 black-and-white handwritten digits corresponding to 10 unique classes. On the other hand, CIFAR is a set of 60000 training and 10000 testing images of 32-by-32 colored images corresponding to perfectly-balanced 10 classes. Other popular datasets include ImageNet and ImageNet Real. 
+
 So far, I have been saying *convolutional neural network* but what exactly is a *convolution* afterall?
 
 ## The Convolutional Layer
