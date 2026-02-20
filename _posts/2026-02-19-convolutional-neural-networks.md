@@ -72,6 +72,8 @@ This generalizes to higher dimensions as well. This is nice because we will be w
 
 ## Convolutional Neural Network Architecture
 
+## PyTorch: The CNN Class Implementation
+
 ## Memory and Time Complexity Details
 
 ## Biological Inspiration for the CNN
