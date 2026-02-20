@@ -16,6 +16,8 @@ An introduction to the theory of convolutional neural networks and the basis of 
 
 In this post, I give a brief overview of convolutional neural networks, one of the hallmarks of modern computer vision and its applications for image-related machine learning tasks. I also go over the history of computer vision progression though this is not particularly necessary to understand the premise behind CNNs and as such are put towards the end of this post. 
 
+My post is adapted with content from Math 156 - Machine Learning, CS 145 - Data Mining and ECE C147A - Neural Networks & Deep Learning I. Special thanks to the instructors for these courses.
+
 ## Representation of Images
 
 Computers represent images with pixels. Typically, an image will contain multiple pixels arranged in a matrix-like order where the higher amount of pixel density corresponds to greater perceived image clarity. We typically refer to the image resolution by talking about the number of rows and columns of pixels in an image. For example, a "4K Image" is characterized by 3840 columns and 2160 rows of pixels. 
