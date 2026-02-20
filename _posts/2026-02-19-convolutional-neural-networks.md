@@ -18,6 +18,15 @@ In this post, I give a brief overview of convolutional neural networks, one of t
 
 ## Representation of Images
 
+Computers represent images with pixels. Typically, an image will contain multiple pixels arranged in a matrix-like order where the higher amount of pixel density corresponds to greater perceived image clarity. We typically refer to the image resolution by talking about the number of rows and columns of pixels in an image. For example, a "4K Image" is characterized by 3840 columns and 2160 rows of pixels. 
+
+While pixels appear colored to us, a computer does not understand a color unless it has an attached numerical value. As such, we represent colors typically through the **RGB Channels**. RGB corresponds to three color channels (Red, Green, Blue) where each channel has values in the range (0, 255). We have a 256 value range because RGB is a 8-bit color scheme so the largest value in binary is (1111111) which is equivalent to \\(2^8 - 1 = 255\\). There are some special values where
+\\[\left(000, 000, 000\right) = \text{Black}\\]
+\\[\left(255, 255, 255\right) = \text{White}\\]
+where one can think of the numerical values as the intensity of light. Thus, no intensity corresponds to a black color. 
+
+Now, to represent an image, we need three matrices where each matrix corresponds to a separate RGB channel. Combining these together gives us a \\(\mathbb{R}^{3\times x \times y}\\) tensor. 
+
 ## Motivation for an Image Classifier
 
 Classification algorithms such as Logistic Regression, The Naïve Bayes Classifier and a simple Two-layer Fully Connected Feed Forward Neural Network are able to classify images quite well. However, there exists a common limitation amongst all the aforementioned. In particular, should we change the orientation of the images or chance the locations of the objects within the images, these classifiers would struggle. 
@@ -31,12 +40,18 @@ So far, I have been saying *convolutional neural network* but what exactly is a 
 ## The Convolutional Layer
 
 The convolution of two functions, \\(f\left(t\right)\\) and \\(g\left(t\right)\\) is given by 
-\\[left(g \ast g\right)\left(t\right) = \int_{-\infty}^{\infty} f\left(\tau\right)g\left(t-\tau\right) d\tau\\]
+\\[\left(f \ast g\right)\left(n\right) = \int_{-\infty}^{\infty} f\left(\tau\right)g\left(t-\tau\right) d\tau\\]
 In discrete time, this is given by 
 \\[\left(f \ast g\right)\left(n\right) = \sum_{m = -\infty}^{\infty} f\left(m\right)g\left(n-m\right)\\]
 Note, however, that in general, Convolutional Neural Networks don't use *convolution* (what the hell! you told me they are convolutional!) but instead use *cross-correlation*. For real-valued functions, cross-correlation is defined by 
 \\[\left(f\star g\right)\left(n\right) = \sum_{m = -\infty}^\infty f\left(m\right)g\left(n + m\right)\\]
 Maybe we should call it a *cross-correlation neural network* then? Eh, doesn't sound as fancy. We'll follow the convention and call this operation a convolution.
+
+The 2D convolution is given by 
+\\[
+\left(f\ast g\right)\left(i, j\right) = \sum_{m = -\infty}^{\infty}\sum_{n = -\infty}^{\infty} f\left(m, n\right)g\left(i + m, j + n\right)
+\\]
+This generalizes to higher dimensions as well. This is nice because we will be working with tensors in image data. Do note that "convolutions" are not commutative. 
 
 ## The Pooling Layer
 
