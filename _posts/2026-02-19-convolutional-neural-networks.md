@@ -30,12 +30,12 @@ So far, I have been saying *convolutional neural network* but what exactly is a 
 
 ## The Convolutional Layer
 
-The convolution of two functions, \\(f\left(t\right)\\) and \\(g\left(t\right)$\\) is given by 
-\\[left(g \ast g\right)\left(t\right) = \int_{-\infty}^{\infty} f\left(\tau\right)g\left(t-\tau\right) \, d\tau\\]
+The convolution of two functions, \\(f\left(t\right)\\) and \\(g\left(t\right)\\) is given by 
+\\[left(g \ast g\right)\left(t\right) = \int_{-\infty}^{\infty} f\left(\tau\right)g\left(t-\tau\right) d\tau\\]
 In discrete time, this is given by 
 \\[\left(f \ast g\right)\left(n\right) = \sum_{m = -\infty}^{\infty} f\left(m\right)g\left(n-m\right)\\]
 Note, however, that in general, Convolutional Neural Networks don't use *convolution* (what the hell! you told me they are convolutional!) but instead use *cross-correlation*. For real-valued functions, cross-correlation is defined by 
-\\[f\left(\star g\right)\left(n\right) = \sum_{m = -\infty}^\infty f\left(m\right)g\left(n + m\right)\\]
+\\[\left(f\star g\right)\left(n\right) = \sum_{m = -\infty}^\infty f\left(m\right)g\left(n + m\right)\\]
 Maybe we should call it a *cross-correlation neural network* then? Eh, doesn't sound as fancy. We'll follow the convention and call this operation a convolution.
 
 ## The Pooling Layer
