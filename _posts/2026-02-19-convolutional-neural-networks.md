@@ -12,15 +12,6 @@ tags:
 use_math: true
 ---
 
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']]
-  }
-};
-</script>
-
 An introduction to the theory of convolutional neural networks and the basis of machine learning for computer vision. We explore motivation, theory and practical applications of mining over image data.
 
 In this post, I give a brief overview of convolutional neural networks, one of the hallmarks of modern computer vision and its applications for image-related machine learning tasks. I also go over the history of computer vision progression though this is not particularly necessary to understand the premise behind CNNs and as such are put towards the end of this post. 
