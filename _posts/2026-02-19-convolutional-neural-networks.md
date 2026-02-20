@@ -60,9 +60,31 @@ The 2D convolution is given by
 \\]
 This generalizes to higher dimensions as well. This is nice because we will be working with tensors in image data. Do note that "convolutions" are not commutative. 
 
+In a CNN, instead of a weight matrix like in a FFNN, we have a set of tensors \\(\mathcal{F} = \{F_1, \dots, F_m\} \in \mathbb{R}^{c\times r \times r}\\). We call these tensors \\(F_1, \dots, F_m\\) as **filters** or **kernels**. Also note that the 'tensor depth' \\(c\\) should always match the depth of the input. 
+
 ### Convolutional Padding and Strides
 
+
+
 ## The Pooling Layer
+
+CNNs also incoporate pooling layers where an operation is applied to all elements within the filtering extent. This corresponds, effectively, to downsampling. The pooling filter has width and height \\(w_p, h_p\\) and is applied with a given stride. It's generally most common to use the \\(\max()\\) operation as the pooling operation, called as **max-pooling**. However, we may also use **avg-pooling** to take the arithmetic mean of all elements within a pooling block. 
+
+*Max-pool* keeps the most dominant cell value in each patch. For example, a \\(2\times2\\) max-pool on a \\(1\times2\times2\\) input \\(X\\) is given by:
+
+\\[\max\text{-pool}\left(X = \begin{bmatrix}
+x_{11} & x_{12}\\
+x_{21} & x_{22}
+\end{bmatrix} = \max\left(X\right)\right)\\]
+
+*Avg-pool* averages every patch into a single scalar. For example, a \\(2\times2\\) avg-pool on a \\(1\times2\times2\right) input \\(X\\) is given by:
+
+\\[
+\text{avg-pool}\left(X = \begin{bmatrix}
+x_{11} & x_{12}\\
+x{21} & x_{22}
+\end{bmatrix}\right) = \text{avg}\left(X\right) = \frac{1}{4}\sum_{1\leq i, j \leq 2} x_{ij}
+\\]
 
 ### Max-Pooling
 
