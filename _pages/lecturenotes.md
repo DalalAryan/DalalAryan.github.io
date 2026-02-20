@@ -14,7 +14,7 @@ Last Updated: February 03, 2025
 <table class="course-table"> <thead> <tr> <th>Course</th> <th>Name</th> <th>Professor</th> <th>Lecture Note</th> </tr> </thead>
   <tbody>
   <tr><td>COM SCI 263</td><td>Graduate Natural Language Processing</td><td>Kai-Wei Chang</td><td>TBD</td></tr> 
-  <tr><td>COM SCI 269</td><td>Current Topics in AI: Physical Artificial Intelligence</td><td>Bolei Zhou</td><td>TBD</td></tr> 
+  <tr><td>COM SCI 269</td><td>Graduate Current Topics: Physical Artificial Intelligence</td><td>Bolei Zhou</td><td>TBD</td></tr> 
   <tr><td>PHYSICS 1B</td><td>Waves, Oscillations, and Electromagnetism</td><td>Alexander Kusenko</td><td>TBD</td></tr> 
   <tr><td>MATH 117</td><td>Abstract Algebra for Applied Mathematics</td><td>Wern Yeong</td><td>TBD</td></tr> 
   <tr><td>MATH 180</td><td>Graph Theory</td><td>Colleen Robichaux</td><td>TBD</td></tr> 
