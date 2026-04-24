@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="void">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ML from Scratch</title>
+  <link rel="stylesheet" href="../assets/theme.css" />
+  <!-- KaTeX for math rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <!-- Prism for code highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <!-- Data -->
+  <script src="content.js"></script>
+  <script src="../config.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sidebar-w: 260px;
+      --topbar-h:  48px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: 'Georgia', 'Times New Roman', serif;
+      line-height: 1.8;
+      transition: background 0.3s, color 0.3s;
+      overflow-x: hidden;
+    }
+
+    /* scanlines */
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, var(--scanline) 2px, var(--scanline) 4px);
+      pointer-events: none; z-index: 999;
+    }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      position: fixed; top: 0; left: 0; right: 0;
+      height: var(--topbar-h); z-index: 100;
+      background: var(--bg-bar);
+      border-bottom: 0.5px solid var(--border);
+      display: flex; align-items: center;
+      padding: 0 18px; gap: 14px;
+      font-family: 'JetBrains Mono', monospace;
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .topbar-hamburger {
+      background: none; border: none; cursor: pointer;
+      color: var(--text-dim); font-size: 16px;
+      display: none; padding: 4px 6px;
+      transition: color 0.2s;
+    }
+    .topbar-hamburger:hover { color: var(--accent); }
+
+    .topbar-home {
+      font-size: 11px; color: var(--text-dim);
+      text-decoration: none; letter-spacing: 0.06em;
+      transition: color 0.2s; white-space: nowrap;
+    }
+    .topbar-home:hover { color: var(--accent); }
+
+    .topbar-sep { color: var(--border); font-size: 12px; }
+
+    .topbar-title {
+      font-size: 12px; color: var(--accent-bright);
+      letter-spacing: 0.04em; font-weight: 500;
+      flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+
+    .topbar-right { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+
+    .search-wrap {
+      position: relative; display: flex; align-items: center;
+    }
+    .search-input {
+      background: var(--bg-block); border: 0.5px solid var(--border);
+      color: var(--text-main); font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; padding: 5px 28px 5px 10px; border-radius: 2px;
+      width: 180px; outline: none; transition: border-color 0.2s;
+    }
+    .search-input:focus { border-color: var(--accent); }
+    .search-input::placeholder { color: var(--text-muted); }
+    .search-icon { position: absolute; right: 8px; color: var(--text-muted); font-size: 11px; pointer-events: none; }
+
+    .search-results {
+      position: absolute; top: 34px; right: 0;
+      background: var(--bg-bar); border: 0.5px solid var(--border);
+      border-radius: 3px; min-width: 280px; max-height: 300px;
+      overflow-y: auto; z-index: 300; display: none;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    .search-results.open { display: block; }
+    .search-result-item {
+      padding: 10px 14px; cursor: pointer; border-bottom: 0.5px solid var(--border-dim);
+      transition: background 0.15s;
+    }
+    .search-result-item:hover { background: var(--bg-block); }
+    .search-result-item:last-child { border-bottom: none; }
+    .sri-ch { font-size: 9px; color: var(--accent-dim); font-family: 'JetBrains Mono', monospace; margin-bottom: 2px; }
+    .sri-title { font-size: 12px; color: var(--text-main); font-family: 'JetBrains Mono', monospace; }
+    .search-no-results { padding: 14px; font-size: 11px; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; text-align: center; }
+
+    .tb-theme-btn {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px; color: var(--accent-dim);
+      background: transparent; border: 0.5px solid var(--border);
+      padding: 4px 10px; cursor: pointer; border-radius: 2px;
+      letter-spacing: 0.07em; transition: all 0.2s; white-space: nowrap;
+    }
+    .tb-theme-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── THEME PANEL ── */
+    .theme-panel {
+      position: fixed; top: calc(var(--topbar-h) + 4px); right: 16px;
+      background: var(--bg-bar); border: 0.5px solid var(--border);
+      border-radius: 4px; padding: 14px 16px; z-index: 200;
+      display: none; min-width: 220px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .theme-panel.open { display: block; }
+    .theme-panel-title { font-size: 9px; color: var(--text-dim); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 12px; }
+    .theme-list { display: flex; flex-direction: column; gap: 6px; }
+    .theme-option {
+      display: flex; align-items: center; gap: 10px;
+      padding: 7px 10px; border: 0.5px solid var(--border-dim);
+      border-radius: 3px; cursor: pointer; transition: all 0.18s;
+      background: transparent; width: 100%; text-align: left;
+    }
+    .theme-option:hover { border-color: var(--accent); }
+    .theme-option.active { border-color: var(--accent); background: var(--bg-block); }
+    .theme-swatch { display: flex; gap: 3px; flex-shrink: 0; }
+    .theme-swatch span { width: 10px; height: 10px; border-radius: 50%; }
+    .theme-name { font-size: 10px; color: var(--text-main); }
+    .theme-desc { font-size: 9px; color: var(--text-dim); margin-left: auto; }
+
+    /* ── SIDEBAR ── */
+    .sidebar {
+      position: fixed; top: var(--topbar-h); left: 0; bottom: 0;
+      width: var(--sidebar-w);
+      background: var(--bg-bar);
+      border-right: 0.5px solid var(--border);
+      overflow-y: auto; z-index: 80;
+      transition: transform 0.25s ease, background 0.3s, border-color 0.3s;
+      scrollbar-width: thin; scrollbar-color: var(--border) transparent;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .sidebar::-webkit-scrollbar { width: 3px; }
+    .sidebar::-webkit-scrollbar-thumb { background: var(--border); }
+
+    .sidebar-header {
+      padding: 20px 18px 14px;
+      border-bottom: 0.5px solid var(--border-dim);
+    }
+    .sidebar-book-title { font-size: 12px; font-weight: 500; color: var(--accent-bright); margin-bottom: 2px; }
+    .sidebar-book-sub   { font-size: 9px; color: var(--text-muted); letter-spacing: 0.06em; }
+
+    .sidebar-nav { padding: 12px 0 24px; }
+
+    .sidebar-chapter { margin-bottom: 2px; }
+
+    .sidebar-ch-btn {
+      display: flex; align-items: center; gap: 8px;
+      width: 100%; padding: 8px 18px; background: none; border: none;
+      cursor: pointer; text-align: left; transition: background 0.15s;
+    }
+    .sidebar-ch-btn:hover { background: var(--bg-block); }
+    .sidebar-ch-btn.active { background: var(--bg-block); }
+
+    .ch-num   { font-size: 9px; color: var(--text-muted); min-width: 28px; }
+    .ch-label { font-size: 11px; color: var(--text-dim); flex: 1; line-height: 1.3; }
+    .sidebar-ch-btn.active .ch-label { color: var(--accent-bright); }
+    .sidebar-ch-btn:hover .ch-label  { color: var(--text-main); }
+
+    .ch-status { font-size: 8px; padding: 1px 6px; border-radius: 2px; flex-shrink: 0; }
+    .ch-status.done { color: var(--green); border: 0.5px solid var(--green); opacity: 0.7; }
+    .ch-status.wip  { color: var(--accent); border: 0.5px solid var(--accent-dim); }
+    .ch-status.soon { color: var(--text-muted); border: 0.5px solid var(--border-dim); }
+
+    .sidebar-sections { display: none; padding: 0 0 4px; }
+    .sidebar-sections.open { display: block; }
+
+    .sidebar-sec-btn {
+      display: flex; align-items: center; gap: 8px;
+      width: 100%; padding: 6px 18px 6px 32px;
+      background: none; border: none; cursor: pointer; text-align: left;
+      transition: background 0.15s;
+    }
+    .sidebar-sec-btn::before {
+      content: ''; display: block; width: 4px; height: 4px;
+      border-radius: 50%; background: var(--border); flex-shrink: 0;
+      transition: background 0.2s;
+    }
+    .sidebar-sec-btn:hover::before  { background: var(--accent); }
+    .sidebar-sec-btn.active::before { background: var(--accent-bright); }
+    .sidebar-sec-btn:hover { background: var(--bg-block); }
+    .sidebar-sec-btn.active { background: var(--bg-block); }
+
+    .sec-label { font-size: 10.5px; color: var(--text-muted); line-height: 1.3; }
+    .sidebar-sec-btn:hover .sec-label  { color: var(--text-dim); }
+    .sidebar-sec-btn.active .sec-label { color: var(--accent); }
+
+    /* ── MAIN CONTENT ── */
+    .main-content {
+      margin-left: var(--sidebar-w);
+      margin-top: var(--topbar-h);
+      min-height: calc(100vh - var(--topbar-h));
+      transition: margin-left 0.25s ease;
+    }
+
+    .content-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 40px 80px;
+    }
+
+    /* breadcrumb */
+    .breadcrumb {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; color: var(--text-muted);
+      margin-bottom: 32px; display: flex; align-items: center; gap: 6px;
+    }
+    .breadcrumb a { color: var(--accent-dim); text-decoration: none; transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb .sep { color: var(--border); }
+
+    /* chapter header */
+    .chapter-num-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; color: var(--accent-dim);
+      letter-spacing: 0.14em; text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .chapter-title {
+      font-size: 32px; font-weight: 700;
+      color: var(--accent-bright); line-height: 1.15;
+      margin-bottom: 8px; letter-spacing: -0.01em;
+    }
+    .chapter-divider {
+      border: none; border-top: 0.5px solid var(--border);
+      margin: 24px 0 36px;
+    }
+
+    /* section */
+    .tb-section { margin-bottom: 52px; }
+
+    .tb-section-title {
+      font-size: 18px; font-weight: 700;
+      color: var(--text-main); margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 0.5px solid var(--border-dim);
+      scroll-margin-top: calc(var(--topbar-h) + 16px);
+    }
+
+    /* prose */
+    .tb-section p {
+      font-size: 15px; color: var(--text-main);
+      line-height: 1.85; margin-bottom: 16px; max-width: 640px;
+    }
+    .tb-section p strong { color: var(--accent-bright); font-weight: 600; }
+    .tb-section p em { color: var(--accent); font-style: italic; }
+
+    /* math blocks */
+    .math {
+      display: block; overflow-x: auto;
+      padding: 16px 20px; margin: 20px 0;
+      background: var(--bg-block);
+      border-left: 2.5px solid var(--accent);
+      border-radius: 2px;
+      text-align: center; font-size: 15px;
+      color: var(--text-main);
+    }
+    .imath { color: var(--text-main); }
+
+    /* code blocks */
+    .tb-section pre {
+      margin: 20px 0; border-radius: 3px;
+      border: 0.5px solid var(--border);
+      font-size: 12.5px; overflow-x: auto;
+      background: var(--bg-term) !important;
+    }
+    .tb-section pre code { font-family: 'JetBrains Mono', monospace; }
+
+    /* callouts */
+    .callout {
+      border-radius: 3px; padding: 14px 18px; margin: 20px 0;
+      font-size: 13.5px; line-height: 1.7; max-width: 640px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .callout strong { display: block; margin-bottom: 4px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
+    .callout.info    { background: var(--bg-block); border-left: 2.5px solid var(--accent); color: var(--text-main); }
+    .callout.info strong { color: var(--accent); }
+    .callout.warning { background: var(--bg-block); border-left: 2.5px solid var(--red); color: var(--text-main); }
+    .callout.warning strong { color: var(--red); }
+    .callout.success { background: var(--bg-block); border-left: 2.5px solid var(--green); color: var(--text-main); }
+    .callout.success strong { color: var(--green); }
+
+    /* on-page TOC (section list at top of chapter) */
+    .section-toc {
+      background: var(--bg-block);
+      border: 0.5px solid var(--border);
+      border-radius: 3px; padding: 16px 20px;
+      margin-bottom: 36px; font-family: 'JetBrains Mono', monospace;
+    }
+    .section-toc-title { font-size: 9px; color: var(--text-muted); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 10px; }
+    .section-toc-list  { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+    .section-toc-list a { font-size: 11.5px; color: var(--accent-dim); text-decoration: none; transition: color 0.15s; }
+    .section-toc-list a:hover { color: var(--accent-bright); }
+    .section-toc-list span { color: var(--text-muted); margin-right: 8px; }
+
+    /* ── PREV / NEXT ── */
+    .chapter-nav {
+      display: flex; justify-content: space-between; gap: 16px;
+      margin-top: 56px; padding-top: 24px;
+      border-top: 0.5px solid var(--border);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .chapter-nav-btn {
+      background: var(--bg-block); border: 0.5px solid var(--border);
+      border-radius: 3px; padding: 12px 18px;
+      cursor: pointer; transition: all 0.2s;
+      text-decoration: none; display: flex; flex-direction: column;
+      max-width: 48%; flex: 1;
+    }
+    .chapter-nav-btn:hover { border-color: var(--accent); }
+    .chapter-nav-btn.next { text-align: right; }
+    .chapter-nav-btn.disabled { opacity: 0.3; pointer-events: none; }
+    .nav-dir   { font-size: 9px; color: var(--text-muted); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 4px; }
+    .nav-title { font-size: 11.5px; color: var(--accent-dim); line-height: 1.3; }
+    .chapter-nav-btn:hover .nav-title { color: var(--accent-bright); }
+
+    /* ── PROGRESS BAR ── */
+    .progress-bar {
+      position: fixed; top: var(--topbar-h); left: var(--sidebar-w); right: 0;
+      height: 2px; background: var(--border-dim); z-index: 90;
+      transition: left 0.25s;
+    }
+    .progress-fill { height: 100%; background: var(--accent); width: 0%; transition: width 0.1s; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      .sidebar { transform: translateX(-100%); }
+      .sidebar.open { transform: translateX(0); }
+      .main-content { margin-left: 0; }
+      .topbar-hamburger { display: block; }
+      .progress-bar { left: 0; }
+      .content-inner { padding: 32px 20px 60px; }
+      .chapter-title { font-size: 24px; }
+      .search-input { width: 130px; }
+      .sidebar-overlay {
+        position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+        z-index: 79; display: none;
+      }
+      .sidebar-overlay.open { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+<!-- THEME PANEL -->
+<div class="theme-panel" id="themePanel">
+  <p class="theme-panel-title">// select theme</p>
+  <div class="theme-list">
+    <button class="theme-option active" data-theme="void"    onclick="setTheme('void',this)"><div class="theme-swatch"><span style="background:#090d13;border:1px solid #333"></span><span style="background:#2a7acc"></span><span style="background:#5bb8ff"></span></div><span class="theme-name">void</span><span class="theme-desc">dark blue</span></button>
+    <button class="theme-option" data-theme="crimson" onclick="setTheme('crimson',this)"><div class="theme-swatch"><span style="background:#0d0909;border:1px solid #333"></span><span style="background:#cc2222"></span><span style="background:#ff7070"></span></div><span class="theme-name">crimson</span><span class="theme-desc">dark red</span></button>
+    <button class="theme-option" data-theme="matrix"  onclick="setTheme('matrix',this)"><div class="theme-swatch"><span style="background:#030a03;border:1px solid #333"></span><span style="background:#22aa55"></span><span style="background:#55ff88"></span></div><span class="theme-name">matrix</span><span class="theme-desc">dark green</span></button>
+    <button class="theme-option" data-theme="nord"    onclick="setTheme('nord',this)"><div class="theme-swatch"><span style="background:#0f111a;border:1px solid #333"></span><span style="background:#5e81ac"></span><span style="background:#88c0d0"></span></div><span class="theme-name">nord</span><span class="theme-desc">dark slate</span></button>
+    <button class="theme-option" data-theme="dawn"    onclick="setTheme('dawn',this)"><div class="theme-swatch"><span style="background:#f4f6fa;border:1px solid #ccc"></span><span style="background:#2255aa"></span><span style="background:#1a3a88"></span></div><span class="theme-name">dawn</span><span class="theme-desc">light blue</span></button>
+    <button class="theme-option" data-theme="dusk"    onclick="setTheme('dusk',this)"><div class="theme-swatch"><span style="background:#faf8f4;border:1px solid #ccc"></span><span style="background:#884422"></span><span style="background:#cc5511"></span></div><span class="theme-name">dusk</span><span class="theme-desc">light warm</span></button>
+  </div>
+</div>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <button class="topbar-hamburger" onclick="toggleSidebar()" aria-label="menu">☰</button>
+  <a class="topbar-home" href="../index.html">← aryan dalal</a>
+  <span class="topbar-sep">/</span>
+  <span class="topbar-title" id="topbarTitle">ML from Scratch</span>
+  <div class="topbar-right">
+    <div class="search-wrap">
+      <input class="search-input" id="searchInput" type="text" placeholder="search..." autocomplete="off" />
+      <span class="search-icon">⌕</span>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <button class="tb-theme-btn" onclick="toggleThemePanel()" id="themeBtnLabel">theme: void ▾</button>
+  </div>
+</header>
+
+<!-- PROGRESS BAR -->
+<div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+<!-- SIDEBAR -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-book-title" id="sidebarTitle">ML from Scratch</div>
+    <div class="sidebar-book-sub">// by aryan dalal</div>
+  </div>
+  <div class="sidebar-nav" id="sidebarNav"></div>
+</nav>
+
+<!-- MAIN -->
+<main class="main-content">
+  <div class="content-inner" id="contentInner">
+    <!-- content rendered by JS -->
+  </div>
+</main>
+
+<script>
+/* ── THEME ── */
+function setTheme(name, btn) {
+  document.documentElement.setAttribute('data-theme', name);
+  document.getElementById('themeBtnLabel').textContent = 'theme: ' + name + ' \u25be';
+  document.querySelectorAll('.theme-option').forEach(function(el){ el.classList.remove('active'); });
+  if (btn) btn.classList.add('active');
+  try { localStorage.setItem('theme', name); } catch(e) {}
+}
+function toggleThemePanel() { document.getElementById('themePanel').classList.toggle('open'); }
+document.addEventListener('click', function(e) {
+  var p = document.getElementById('themePanel');
+  if (!p.contains(e.target) && !e.target.closest('#themeBtnLabel')) p.classList.remove('open');
+});
+(function() {
+  try {
+    var s = localStorage.getItem('theme');
+    if (s) { var b = document.querySelector('.theme-option[data-theme="' + s + '"]'); setTheme(s, b); }
+  } catch(e) {}
+})();
+
+/* ── SIDEBAR TOGGLE (mobile) ── */
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebarOverlay').classList.toggle('open');
+}
+function closeSidebar() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebarOverlay').classList.remove('open');
+}
+
+/* ── STATE ── */
+var currentChapterIdx = 0;
+
+/* ── RENDER SIDEBAR ── */
+function buildSidebar() {
+  var nav = document.getElementById('sidebarNav');
+  nav.innerHTML = '';
+  TEXTBOOK_CONTENT.chapters.forEach(function(ch, ci) {
+    var wrap = document.createElement('div');
+    wrap.className = 'sidebar-chapter';
+
+    var btn = document.createElement('button');
+    btn.className = 'sidebar-ch-btn' + (ci === currentChapterIdx ? ' active' : '');
+    btn.innerHTML =
+      '<span class="ch-num">ch.' + ch.num + '</span>' +
+      '<span class="ch-label">' + ch.title + '</span>' +
+      '<span class="ch-status ' + ch.status + '">' + ch.status + '</span>';
+    btn.onclick = function() { loadChapter(ci); closeSidebar(); };
+
+    var secs = document.createElement('div');
+    secs.className = 'sidebar-sections' + (ci === currentChapterIdx ? ' open' : '');
+
+    ch.sections.forEach(function(sec) {
+      var sb = document.createElement('button');
+      sb.className = 'sidebar-sec-btn';
+      sb.innerHTML = '<span class="sec-label">' + sec.title + '</span>';
+      sb.onclick = function(e) { e.stopPropagation(); loadChapter(ci); setTimeout(function(){ scrollToSection(sec.id); }, 80); closeSidebar(); };
+      secs.appendChild(sb);
+    });
+
+    wrap.appendChild(btn);
+    wrap.appendChild(secs);
+    nav.appendChild(wrap);
+  });
+}
+
+/* ── RENDER CHAPTER ── */
+function loadChapter(idx) {
+  currentChapterIdx = idx;
+  var ch = TEXTBOOK_CONTENT.chapters[idx];
+  var inner = document.getElementById('contentInner');
+
+  /* update topbar */
+  document.getElementById('topbarTitle').textContent = 'ch.' + ch.num + ' — ' + ch.title;
+
+  /* breadcrumb */
+  var crumb = '<div class="breadcrumb">' +
+    '<a href="../index.html">home</a>' +
+    '<span class="sep">/</span>' +
+    '<a href="#" onclick="return false">textbook</a>' +
+    '<span class="sep">/</span>' +
+    '<span>ch.' + ch.num + '</span></div>';
+
+  /* chapter header */
+  var header = '<p class="chapter-num-label">chapter ' + ch.num + '</p>' +
+    '<h1 class="chapter-title">' + ch.title + '</h1>' +
+    '<hr class="chapter-divider">';
+
+  /* inline TOC */
+  var toc = '<div class="section-toc"><div class="section-toc-title">in this chapter</div><ul class="section-toc-list">';
+  ch.sections.forEach(function(sec, si) {
+    toc += '<li><a href="#' + sec.id + '"><span>' + String(si + 1).padStart(2,'0') + '.</span>' + sec.title + '</a></li>';
+  });
+  toc += '</ul></div>';
+
+  /* sections */
+  var sections = '';
+  ch.sections.forEach(function(sec) {
+    sections += '<div class="tb-section" id="' + sec.id + '">' +
+      '<h2 class="tb-section-title">' + sec.title + '</h2>' +
+      sec.content +
+      '</div>';
+  });
+
+  /* prev / next */
+  var prev = idx > 0 ? TEXTBOOK_CONTENT.chapters[idx - 1] : null;
+  var next = idx < TEXTBOOK_CONTENT.chapters.length - 1 ? TEXTBOOK_CONTENT.chapters[idx + 1] : null;
+  var navHtml = '<div class="chapter-nav">';
+  navHtml += '<a class="chapter-nav-btn prev' + (prev ? '' : ' disabled') + '" onclick="' + (prev ? 'loadChapter(' + (idx-1) + ')' : '') + '; return false;" href="#">' +
+    '<span class="nav-dir">← previous</span>' +
+    '<span class="nav-title">' + (prev ? 'ch.' + prev.num + ' — ' + prev.title : '—') + '</span></a>';
+  navHtml += '<a class="chapter-nav-btn next' + (next ? '' : ' disabled') + '" onclick="' + (next ? 'loadChapter(' + (idx+1) + ')' : '') + '; return false;" href="#">' +
+    '<span class="nav-dir">next →</span>' +
+    '<span class="nav-title">' + (next ? 'ch.' + next.num + ' — ' + next.title : '—') + '</span></a>';
+  navHtml += '</div>';
+
+  inner.innerHTML = crumb + header + toc + sections + navHtml;
+
+  /* rebuild sidebar to reflect active chapter */
+  buildSidebar();
+
+  /* scroll to top */
+  window.scrollTo(0, 0);
+
+  /* render math */
+  renderMath();
+
+  /* update URL hash */
+  history.replaceState(null, '', '#' + ch.id);
+}
+
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
+
+/* ── MATH RENDERING ── */
+function renderMath() {
+  if (typeof renderMathInElement === 'undefined') {
+    setTimeout(renderMath, 200); return;
+  }
+  /* block math */
+  document.querySelectorAll('.math').forEach(function(el) {
+    try {
+      katex.render(el.textContent, el, { displayMode: true, throwOnError: false });
+    } catch(e) {}
+  });
+  /* inline math */
+  document.querySelectorAll('.imath').forEach(function(el) {
+    try {
+      katex.render(el.textContent, el, { displayMode: false, throwOnError: false });
+    } catch(e) {}
+  });
+}
+
+/* ── SEARCH ── */
+var searchIndex = [];
+function buildSearchIndex() {
+  TEXTBOOK_CONTENT.chapters.forEach(function(ch, ci) {
+    ch.sections.forEach(function(sec) {
+      var text = sec.content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+      searchIndex.push({ chIdx: ci, chNum: ch.num, chTitle: ch.title, secId: sec.id, secTitle: sec.title, text: text });
+    });
+  });
+}
+
+document.getElementById('searchInput').addEventListener('input', function() {
+  var q = this.value.trim().toLowerCase();
+  var res = document.getElementById('searchResults');
+  if (q.length < 2) { res.classList.remove('open'); res.innerHTML = ''; return; }
+
+  var hits = searchIndex.filter(function(item) {
+    return item.secTitle.toLowerCase().includes(q) || item.chTitle.toLowerCase().includes(q) || item.text.toLowerCase().includes(q);
+  }).slice(0, 8);
+
+  if (!hits.length) {
+    res.innerHTML = '<div class="search-no-results">no results for "' + q + '"</div>';
+  } else {
+    res.innerHTML = hits.map(function(h) {
+      return '<div class="search-result-item" onclick="loadChapter(' + h.chIdx + ');setTimeout(function(){scrollToSection(\'' + h.secId + '\')},80);document.getElementById(\'searchResults\').classList.remove(\'open\');document.getElementById(\'searchInput\').value=\'\';">' +
+        '<div class="sri-ch">ch.' + h.chNum + ' — ' + h.chTitle + '</div>' +
+        '<div class="sri-title">' + h.secTitle + '</div></div>';
+    }).join('');
+  }
+  res.classList.add('open');
+});
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.search-wrap')) {
+    document.getElementById('searchResults').classList.remove('open');
+  }
+});
+
+/* ── PROGRESS BAR ── */
+window.addEventListener('scroll', function() {
+  var s = document.documentElement.scrollTop;
+  var h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  document.getElementById('progressFill').style.width = (h > 0 ? (s / h * 100) : 0) + '%';
+});
+
+/* ── INIT ── */
+window.addEventListener('load', function() {
+  buildSearchIndex();
+
+  /* read hash to decide which chapter */
+  var hash = window.location.hash.replace('#', '');
+  var startIdx = 0;
+  if (hash) {
+    TEXTBOOK_CONTENT.chapters.forEach(function(ch, i) {
+      if (ch.id === hash) startIdx = i;
+    });
+  }
+
+  loadChapter(startIdx);
+});
+</script>
+</body>
+</html>
