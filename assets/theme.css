@@ -1,0 +1,107 @@
+/* ================================================================
+   assets/theme.css — SHARED THEME VARIABLES
+   Imported by index.html and textbook/index.html.
+   ================================================================ */
+
+[data-theme="void"] {
+  --bg:            #090d13;
+  --bg-bar:        #0c1420;
+  --bg-block:      #0a1525;
+  --bg-term:       #060a10;
+  --accent:        #2a7acc;
+  --accent-bright: #5bb8ff;
+  --accent-dim:    #1e4466;
+  --text-main:     #a8d4ff;
+  --text-dim:      #3a6088;
+  --text-muted:    #1e3a5a;
+  --green:         #22aa55;
+  --red:           #dd4444;
+  --border:        #1e2d45;
+  --border-dim:    #111f33;
+  --scanline:      rgba(0,0,0,0.07);
+}
+[data-theme="crimson"] {
+  --bg:            #0d0909;
+  --bg-bar:        #130c0c;
+  --bg-block:      #110808;
+  --bg-term:       #090606;
+  --accent:        #cc2222;
+  --accent-bright: #ff7070;
+  --accent-dim:    #661111;
+  --text-main:     #ffb0b0;
+  --text-dim:      #883333;
+  --text-muted:    #441a1a;
+  --green:         #22aa55;
+  --red:           #ff5555;
+  --border:        #3a1111;
+  --border-dim:    #220a0a;
+  --scanline:      rgba(0,0,0,0.08);
+}
+[data-theme="matrix"] {
+  --bg:            #030a03;
+  --bg-bar:        #060e06;
+  --bg-block:      #040c04;
+  --bg-term:       #020802;
+  --accent:        #22aa55;
+  --accent-bright: #55ff88;
+  --accent-dim:    #0d4422;
+  --text-main:     #88dd99;
+  --text-dim:      #2a6633;
+  --text-muted:    #133322;
+  --green:         #55ff88;
+  --red:           #dd4444;
+  --border:        #0d3311;
+  --border-dim:    #071a08;
+  --scanline:      rgba(0,0,0,0.09);
+}
+[data-theme="nord"] {
+  --bg:            #0f111a;
+  --bg-bar:        #131724;
+  --bg-block:      #111422;
+  --bg-term:       #0c0e18;
+  --accent:        #5e81ac;
+  --accent-bright: #88c0d0;
+  --accent-dim:    #2e4466;
+  --text-main:     #a0b8cc;
+  --text-dim:      #3a5066;
+  --text-muted:    #1e3044;
+  --green:         #a3be8c;
+  --red:           #bf616a;
+  --border:        #1e2d44;
+  --border-dim:    #131e33;
+  --scanline:      rgba(0,0,0,0.06);
+}
+[data-theme="dawn"] {
+  --bg:            #f4f6fa;
+  --bg-bar:        #e8ecf4;
+  --bg-block:      #eef1f8;
+  --bg-term:       #e0e6f2;
+  --accent:        #2255aa;
+  --accent-bright: #1a3a88;
+  --accent-dim:    #7788bb;
+  --text-main:     #2a3a55;
+  --text-dim:      #6677aa;
+  --text-muted:    #99aabb;
+  --green:         #226633;
+  --red:           #aa2222;
+  --border:        #c8d0e0;
+  --border-dim:    #dde0ec;
+  --scanline:      rgba(0,0,0,0.015);
+}
+[data-theme="dusk"] {
+  --bg:            #faf8f4;
+  --bg-bar:        #f0ece4;
+  --bg-block:      #f5f2ec;
+  --bg-term:       #ede8de;
+  --accent:        #884422;
+  --accent-bright: #cc5511;
+  --accent-dim:    #aa8866;
+  --text-main:     #3a2a1a;
+  --text-dim:      #886644;
+  --text-muted:    #c4aa88;
+  --green:         #336622;
+  --red:           #aa2222;
+  --border:        #d8c8b0;
+  --border-dim:    #e8dcc8;
+  --scanline:      rgba(0,0,0,0.01);
+}
