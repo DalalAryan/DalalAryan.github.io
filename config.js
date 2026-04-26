@@ -12,7 +12,7 @@ var SITE = {
   tagline:     'compact topological space',
 
   /* ── Bio (HTML allowed) ── */
-  bio: 'site still a work in progress! sorry!',
+  bio: '<span class="err">site still a work in progress! sorry!</span>',
 
    /*
    I work at the intersection of <span class="hl">pure math</span> and ' +
