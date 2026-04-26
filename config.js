@@ -12,11 +12,15 @@ var SITE = {
   tagline:     'notes from someone who thinks in equations',
 
   /* ── Bio (HTML allowed) ── */
-  bio: 'I work at the intersection of <span class="hl">pure math</span> and ' +
+  bio: '<span class="err">site still a work in progress! sorry!/span>.',
+
+   /*
+   I work at the intersection of <span class="hl">pure math</span> and ' +
        '<span class="hl">machine learning</span> — the kind of person who sees a dataset ' +
        'and immediately thinks about its manifold structure. I write about things ' +
        'that took me embarrassingly long to understand, in the hope it saves someone ' +
-       'else the <span class="err">stack overflow</span>.',
+       'else the <span class="err">stack overflow</span>.
+   */
 
   /* ── About comment (shown under bio) ── */
   aboutComment: '// if you don\'t understand math, do you really understand the universe?',
