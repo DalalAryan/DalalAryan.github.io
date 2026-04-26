@@ -8,11 +8,11 @@ var SITE = {
   /* ── Identity ── */
   name:        'aryan dalal',
   nameDisplay: 'aryan dalal',          // shown in <title> and header
-  role:        'mathematician · ml enthusiast · coffee dependent',
-  tagline:     'notes from someone who thinks in equations',
+  role:        'undergraduate · machine learning · mathematics ',
+  tagline:     'compact topological space',
 
   /* ── Bio (HTML allowed) ── */
-  bio: '<span class="err">site still a work in progress! sorry!/span>.',
+  bio: 'site still a work in progress! sorry!',
 
    /*
    I work at the intersection of <span class="hl">pure math</span> and ' +
